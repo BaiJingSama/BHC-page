@@ -1,5 +1,29 @@
-# Vue 3 + Vite
+# BHC 官网项目
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 项目简介
+BHC 官网项目是一个基于 **Vue 3** 构建的企业官网项目。  
+该项目使用了 **Vite** 作为构建工具，结合 **TailwindCSS** 进行样式设计，同时集成了 **Element Plus** 组件库和 **Pinia** 状态管理，旨在快速构建高性能、响应式的现代网站。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## 技术栈
+
+- **Vue 3**：渐进式前端框架，构建用户界面。
+- **Vite**：极速开发和构建工具。
+- **TailwindCSS**：实用类 CSS 框架，用于快速布局和样式。
+- **Element Plus**：Vue 3 的 UI 组件库，提供丰富的组件。
+- **Pinia**：Vue 官方推荐的状态管理工具。
+- **Vue Router**：前端路由管理。
+- **Axios**：HTTP 请求库，用于数据请求和接口调用。
+- **Sass**：CSS 预处理器，用于编写结构化样式。
+
+---
+
+## 功能特点
+
+- 响应式布局，兼容 PC 与移动端。
+- 简单易用的组件化开发。
+- 高性能构建与热更新支持。
+- 状态管理和路由管理完善。
+- 可扩展的接口请求与数据处理。
+

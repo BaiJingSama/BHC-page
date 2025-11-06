@@ -1,0 +1,10 @@
+{
+  "message": {
+    "hello": "Hello",
+    "welcome": "Welcome to our site"
+  },
+  "home": {
+    "title": "Home",
+    "intro": "This is the home description"
+  }
+}

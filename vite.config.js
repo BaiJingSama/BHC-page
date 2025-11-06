@@ -10,6 +10,7 @@ export default defineConfig((mode) => {
   return {
     plugins: [vue(),tailwindcss(),],
     server: {
+      host: '0.0.0.0', // 允许局域网访问
       proxy: {
         // 匹配所有以 /api 开头的请求
         '/api': {

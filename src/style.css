@@ -58,11 +58,24 @@ button:focus-visible {
   padding: 2em;
 }
 
+
+/* rpx 适配方案：以 750rpx 为设计宽度，动态设置根字体大小，1rpx = 1/750 vw */
+html {
+  font-size: calc(100vw / 750 * 100); /* 1rpx = 0.133vw, 100rpx = 13.3vw */
+}
+
 #app {
-  max-width: 1280px;
+  width: 750rpx;
+  max-width: 100vw;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+/* rpx 辅助类（如需直接用 rpx 单位） */
+[class*="rpx-"] {
+  /* 例如 .rpx-20 { width: 20rpx; } */
+  width: var(--rpx-width, auto);
 }
 
 @media (prefers-color-scheme: light) {
@@ -75,5 +88,11 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+.dropdown {
+  .el-dropdown-menu{
+    background-color: #ab60ff !important;
   }
 }

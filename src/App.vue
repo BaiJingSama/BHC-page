@@ -1,14 +1,17 @@
 <template>
-  <div class="relative">
+  <div class="relative bg-[#0e0024]">
     <HeaderComponent />
 
     <main>
       <router-view />
     </main>
+
+    <FooterComponent />
   </div>
 </template>
 
 <script setup>
 import HeaderComponent from './components/header/index.vue'
+import FooterComponent from './components/footer/index.vue'
 </script>
 

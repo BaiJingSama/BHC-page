@@ -18,7 +18,7 @@
         <span class="text-[#9f99a7] text-sm pt-4">猎取荣耀，夺走世界。</span>
       </div>
 
-      <div class="backdrop-filter px-6 text-xs">
+      <div class="backdrop-filter px-4 text-xs">
         <div class="py-6">
           <div>Bounty Hunter 是全球首个全链互通的PVP GameFi竞技场。</div>
           <div>在这里，你的每一次点击，都在改变命运。</div>
@@ -42,7 +42,7 @@
       </div>
 
       <div class="flex flex-col px-6 text-[#9f99a7] text-xs">
-        <span class="text-white pb-4 text-5xl font-bold tracking-[.1em]">游戏模式</span>
+        <span class="text-white pb-4 text-5xl font-bold tracking-[0.1em]">游戏模式</span>
         <span v-for="item in showModeData.textList" :key="item">{{ item }}</span>
       </div>
 

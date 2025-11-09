@@ -91,6 +91,16 @@ html {
   }
 }
 
+/* 全局：使图片按容器等比例缩放，宽度不超过容器宽度且保持纵横比。
+   如果你在某些图片上使用了具体宽度类（例如 Tailwind 的 w-32 / w-72），
+   这些类的样式会覆盖此规则。 */
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .dropdown {
   .el-dropdown-menu{
     background-color: #ab60ff !important;

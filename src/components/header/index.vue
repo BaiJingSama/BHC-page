@@ -50,7 +50,7 @@ const menuList = [
   },
   {
     name: '游戏玩法',
-    path: '',
+    path: '/recommendGame',
   },
   {
     name: '积分规则',
@@ -58,7 +58,7 @@ const menuList = [
   },
   {
     name: '联盟合作',
-    path: '',
+    path: '/recommendBh',
   },
   {
     name: '白皮书',

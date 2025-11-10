@@ -1,10 +1,55 @@
 <template>
-  <div class="p-8">
-    <el-button type="primary" @click="toHome">回首页</el-button>
-    <h1 class="text-4xl font-bold mt-4">Vue 3 + Element Plus + TailwindCSS</h1>
-    <div class="text-blue-500 text-xl font-bold">游戏系统</div>
-    <div class="text-base md:text-lg lg:text-xl">
-      响应式文字大小
+  <div class="w-full pt-20 overflow-x-hidden">
+    <div class="px-12">
+      <div class="text-white text-3xl font-bold tracking-[0.05em]">PVP模式：双猎之战</div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] py-2">唯快与策略者胜</div>
+
+      <div class="text-[#9f99a7] text-xs py-4 pb-8">在赏金猎人的世界里，速度即力量，精准即财富</div>
+    </div>
+
+    <div class="w-full flex flex-col items-center">
+      <div class="flex flex-col rounded-3xl px-6 py-8 max-w-[80vw] text-[#d3ced9] text-xs glass relative">
+        <img src="./images/pvp-image.png" alt="" class="w-40 max-w-[40vw] h-auto absolute -top-20 -right-20">
+        <span class="leading-6">在赏金猎人的世界里，</span>
+        <span class="leading-6">速度即力量，精准即财富。</span>
+        <span class="leading-6">当两名玩家踏入竞技场，计时开始，</span>
+        <span class="leading-6">金币散布在整张地图上。</span>
+        <span class="leading-6">没有运气，只有操作与判断，</span>
+        <span class="leading-6">一分钟内，谁能在混乱中夺取最多的金币，</span>
+        <span class="leading-6">谁就是最终的猎场之王。</span>
+        <span class="leading-6">赢家：获得 90% 总门票；</span>
+        <span class="leading-6">输家：按门票当前价值 100% 等值返还积分凭证；</span>
+        <span class="leading-6">生态基金：3% 总门票；</span>
+        <span class="leading-6">邀请奖励：7% 总门票。</span>
+      </div>
+    </div>
+
+    <div class="px-12 pt-10 flex flex-col items-end">
+      <div class="text-white text-3xl font-bold tracking-[0.05em]">极速模式</div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] py-2">一场与时间赛跑</div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em]">的收益狂潮</div>
+
+      <div class="text-[#9f99a7] text-xs py-4 pb-8">在赏金猎人的世界里，速度即力量，精准即财富</div>
+    </div>
+
+    <div class="w-full flex flex-col items-center pb-10">
+      <div class="flex flex-col items-end rounded-3xl px-6 py-8 max-w-[80vw] text-[#d3ced9] text-xs glass relative">
+        <img src="./images/topspeed-image.png" alt="" class="w-35 max-w-[35vw] h-auto absolute -top-40 -left-15">
+        <span class="leading-6">倒计时启动，30秒生死时刻</span>
+        <span class="leading-6">你投下门票，系统开始计时</span>
+        <span class="leading-6">越早兑现，越稳妥</span>
+        <span class="leading-6">越晚兑现，风险越高，但回报可能高达100倍</span>
+        <span class="leading-6">荧幕上的倍数从 1x 缓缓跳动上升</span>
+        <span class="leading-6">1.5x、2x、5x、10x...每一秒都让收益倍增</span>
+        <span class="leading-6">也让危险更近，如果你等待过久</span>
+        <span class="leading-6">系统可能随机崩溃———你的门票将化为灰烬</span>
+        <span class="leading-6">胜利者（成功兑现）</span>
+        <span class="leading-6">获得当局总奖池（门票 X 倍数）的90%</span>
+        <span class="leading-6">失败者（兑现失败或崩溃）</span>
+        <span class="leading-6">按门票当前价值100%等值返回积分凭证</span>
+        <span class="leading-6">生态基金：获得总奖池的 3%</span>
+        <span class="leading-6">邀请奖励：获得总奖池的 7%</span>
+      </div>
     </div>
   </div>
 </template>
@@ -17,4 +62,14 @@ const toHome = () => {
 }
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.glass {
+  background: rgba(255, 255, 255, 0.02);
+  /* 完全透明 */
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+
+  border-radius: 16px;
+  // border: 1px solid rgba(255,255,255,0.25);    /* 高光边框，让轮廓更像玻璃 */   
+}
+</style>

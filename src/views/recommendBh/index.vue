@@ -117,7 +117,55 @@
           </tbody>
         </table>
       </div>
+
+      <div class="w-full flex items-stretch justify-center pt-8">
+        <div
+          class="flex flex-col items-center w-45 max-w-[45vw] border border-white rounded-2xl py-10 px-4 relative text-[8px] text-white">
+          <div
+            class="absolute top-0 left-[50%] -translate-x-1/2 -translate-y-1/2 border border-white rounded-xl text-base py-1 px-6 text-nowrap bg-[#0e0024]">
+            入驻条件</div>
+          <span>入驻费用:3000U/名额</span>
+          <span>全球仅限前10位联盟合作伙伴</span>
+          <span>申请审核制，先到先得</span>
+        </div>
+
+        <div
+          class="flex flex-col items-center w-45 max-w-[45vw] ml-4 border border-white rounded-2xl py-8 px-1 relative text-[8px] text-white">
+          <div
+            class="absolute top-0 left-[50%] -translate-x-1/2 -translate-y-1/2 border border-white rounded-xl text-base py-1 px-3 text-nowrap bg-[#0e0024]">
+            为什么是现在?</div>
+          <span>GameFi的下一个爆点</span>
+          <span>不在「玩法」而在「机制」。</span>
+          <span>Bounty Hunter已经验证了三重闭环逻辑:</span>
+          <span>即时收益 × 永久凭证 × 全链联盟。</span>
+          <span>这是一个能把流量、代币、用户、品牌</span>
+          <span>全部凝聚在同一生态引擎里的系统</span>
+        </div>
+      </div>
+
+      <div class="w-full flex flex-col items-center py-6  text-base text-white font-bold">
+        <span>现在入驻，您获得的不是一个合作位</span>
+        <span>而是一张通往未来Web3价值体系的头等舱船票</span>
+      </div>
+
+      <div
+        class="w-80 max-w-[80vw] text-xs flex flex-col items-center border border-white rounded-3xl pt-4 pb-6 px-4 text-white">
+        <img src="./images/invite-title-image.png" alt="" class="w-65 max-w-[65vw] h-auto">
+        <span>全球仅10名席位•不容错过</span>
+        <span>加入Bounty Hunter，不止是合作</span>
+        <span>而是共同点燃整个链游宇宙的燃料</span>
+      </div>
+
+      <div class="w-full flex items-center justify-center pt-8">
+        <img src="./images/x-qr-code.png" alt="" class="w-25 max-w-[25vw] h-auto">
+        <img src="./images/tg-qr-code.png" alt="" class="w-25 max-w-[25vw] h-auto ml-12">
+      </div>
+
+      <div class="w-full flex items-center justify-center py-8">
+        <img src="./images/bottom-logo.png" alt="" class="w-15 max-w-[15vw] h-auto">
+      </div>
     </div>
+
 
 
   </div>
@@ -152,8 +200,10 @@ const toHome = () => {
 }
 
 .clean-table .left-col {
-  white-space: nowrap;   /* 不允许换行 */
-  width: 1%;             /* 触发 auto-fit，让内容决定宽度 */
+  white-space: nowrap;
+  /* 不允许换行 */
+  width: 1%;
+  /* 触发 auto-fit，让内容决定宽度 */
   text-align: center;
 }
 
@@ -161,6 +211,7 @@ const toHome = () => {
 .clean-table td:not(.left-col),
 .clean-table th:not(.left-col) {
   white-space: normal;
-  text-align: left;       /* 可按需改 */
+  text-align: left;
+  /* 可按需改 */
 }
 </style>

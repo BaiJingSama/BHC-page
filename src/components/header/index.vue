@@ -38,11 +38,11 @@ const dialogVisible = ref(false)
 const menuList = [
   {
     name: '首页',
-    path: '',
+    path: '/',
   },
   {
     name: '公告',
-    path: '',
+    path: '/notice',
   },
   {
     name: '下载游戏',
@@ -71,6 +71,14 @@ const menuList = [
 ]
 
 const goPath = async (path: string) => {
+  // 确定本地路由表中有path
+  const routes = router.getRoutes()
+  
+  // console.log(routes)
+  if (!routes.find((route) => route.path === path)) {
+    return
+  }
+
   // 关闭对话框
   dialogVisible.value = false
 

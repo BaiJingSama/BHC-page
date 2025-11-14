@@ -4,10 +4,11 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig((mode) => {
-
+  
   const env = loadEnv(mode, process.cwd())
 
   return {
+    base: 'https://github.com/BaiJingSama/BHC-page',
     plugins: [vue(),tailwindcss(),],
     server: {
       host: '0.0.0.0', // 允许局域网访问

@@ -8,7 +8,7 @@ export default defineConfig((mode) => {
   const env = loadEnv(mode, process.cwd())
 
   return {
-    base: 'BHC-page',
+    base: '/BHC-page/',
     plugins: [vue(),tailwindcss(),],
     server: {
       host: '0.0.0.0', // 允许局域网访问

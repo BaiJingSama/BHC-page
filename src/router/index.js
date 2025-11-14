@@ -15,6 +15,8 @@ const routes = [
   { path: '/downGame', name: 'DownGame', component: DownGame },
 ]
 
+console.log(createWebHashHistory, 'createWebHashHistory')
+
 const router = createRouter({
   history: createWebHashHistory(),
   routes,

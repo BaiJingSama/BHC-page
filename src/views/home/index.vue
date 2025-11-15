@@ -80,8 +80,8 @@
 
       <div class="w-full flex justify-center -mt-6">
         <img src="./images/league-bg.png" alt="" class="w-[140vw] max-w-none h-auto" style="min-width:600px;" />
-        <div class="absolute flex flex-col item-center justify-center text-white text-xs z-10 pt-10 text-center">
-          <div class="py-4">共享流量，分润永续</div>
+        <div class="absolute flex flex-col item-center justify-center text-white text-xs z-10 pt-8 text-center">
+          <div class="py-3">共享流量，分润永续</div>
           <span>联盟是Bounty Hunter生态的核心动力</span>
           <span>所有合作方享受 7% 永续收益分配</span>
           <span>可绑定推广关系、部署子战场、获取联盟激励</span>

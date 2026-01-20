@@ -2,7 +2,7 @@
   <div class="relative bg-[#0e0024]">
     <HeaderComponent />
 
-    <main>
+    <main class="">
       <router-view />
     </main>
 

@@ -14,8 +14,8 @@
 
 
       <div class="flex flex-col px-6 py-10">
-        <span class="text-white text-5xl font-bold tracking-[.05em]">项目介绍</span>
-        <span class="text-[#9f99a7] text-sm pt-4">猎取荣耀，夺走世界。</span>
+        <span class="text-white text-5xl font-bold tracking-[.05em]">{{ $t('home.title') }}</span>
+        <span class="text-[#9f99a7] text-sm pt-4">{{ $t('home.intro') }}</span>
       </div>
 
       <div class="backdrop-filter px-4 text-xs">
@@ -152,6 +152,7 @@ import { ref, nextTick, computed } from 'vue'
 import carouselImage1 from './images/carousel-1.png'
 import pvpImage from './images/pvp-game-image.png'
 import topspeedImage from './images/topspeed-game-image.png'
+
 // import { useRouter } from 'vue-router'
 // const router = useRouter()
 // const changeRoute = (path: string) => {

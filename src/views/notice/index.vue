@@ -1,8 +1,8 @@
 <template>
   <div class="w-full pt-20">
     <div class="flex flex-col px-8">
-      <span class="text-white text-5xl font-bold tracking-[.05em]">游戏公告</span>
-      <span class="text-[#9f99a7] text-sm pt-4">猎取荣耀，夺走世界。</span>
+      <span class="text-white text-5xl font-bold tracking-[.05em]">{{ $t('notice.title') }}</span>
+      <span class="text-[#9f99a7] text-sm pt-4">{{ $t('notice.intro') }}</span>
     </div>
 
     <div class="w-full flex flex-col items-center pt-10 pb-20">

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-center px-8 py-6 absolute inset-x-0 top-0 z-2">
+  <div class="flex justify-between items-center px-4 sm:px-8 h-16 fixed inset-x-0 top-0 z-50 bg-transparent">
     <img src="./images/header-logo.png" alt="" class="shrink-0 w-72 max-w-[34vw] h-auto" />
     <div class="flex items-center gap-4">
       <el-dropdown trigger="click" effect="dark" :show-arrow="false">
@@ -9,8 +9,8 @@
         </button>
         <template #dropdown>
           <el-dropdown-menu class="dropdown-menu">
-            <el-dropdown-item :icon="Plus" @click="() => language = '简体中文'">简体中文</el-dropdown-item>
-            <el-dropdown-item :icon="Plus" @click="() => language = 'English'">English</el-dropdown-item>
+            <el-dropdown-item :icon="Plus" @click="() => switchLang('zh', '简体中文')">简体中文</el-dropdown-item>
+            <el-dropdown-item :icon="Plus" @click="() => switchLang('en', 'English')">English</el-dropdown-item>
           </el-dropdown-menu>
         </template>
       </el-dropdown>
@@ -29,11 +29,30 @@
 
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+// 导入 i18n 实例以切换全局语言
+import i18n from '../../plugins/i18n'
 
 const router = useRouter()
 const language = ref('简体中文')
 
 const dialogVisible = ref(false)
+
+// 切换全局语言：langCode 使用 'zh' / 'en'
+const switchLang = (langCode: string, label: string) => {
+  language.value = label
+  try {
+    // i18n.global.locale 在 composition API 模式下通常是一个 Ref
+    // 为兼容性使用 any 处理赋值
+    try {
+      ;(i18n.global.locale as any).value = langCode
+    } catch (e) {
+      ;(i18n.global as any).locale = langCode
+    }
+  } catch (e) {
+    // 忽略切换失败，不阻塞 UI
+    console.warn('切换语言失败', e)
+  }
+}
 
 const menuList = [
   {
@@ -69,6 +88,7 @@ const menuList = [
     path: '',
   },
 ]
+
 
 const goPath = async (path: string) => {
   // 确定本地路由表中有path

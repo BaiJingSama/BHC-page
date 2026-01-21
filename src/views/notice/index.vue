@@ -1,13 +1,13 @@
 <template>
   <div class="w-full pt-20">
-    <div class="flex flex-col px-8">
-      <span class="text-white text-5xl font-bold tracking-[.05em]">{{ $t('notice.title') }}</span>
-      <span class="text-[#9f99a7] text-sm pt-4">{{ $t('notice.intro') }}</span>
+    <div class="flex flex-col px-12">
+      <span class="text-[#AB60FF] text-5xl font-bold tracking-[.05em]">{{ $t('notice.title') }}</span>
+      <span class="text-[#9f99a7] text-[10px] pt-4">{{ $t('notice.intro') }}</span>
     </div>
 
-    <div class="w-full flex flex-col items-center pt-10 pb-20">
+    <div class="w-full flex flex-col items-center pt-6 pb-20">
       <div v-for="(item, index) in noticeList" :key="index" @click="item.isActive = !item.isActive"
-        class="w-85 max-w-[85vw] border border-white rounded-xl py-4 px-8 bg-[#271a3a] text-white text-xs  mt-8">
+        class="w-85 max-w-[85vw] border border-[#9f99a7] rounded-xl py-4 px-8 bg-[#271a3a] text-white text-xs  mt-8">
         <div class="w-full flex items-center relative">
           <div class="w-4 h-4 rounded-md bg-[#ab60ff] absolute -left-6 top-[50%] -translate-y-1/2"></div>
           <div class="text-sm">{{ item.title }}</div>

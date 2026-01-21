@@ -69,35 +69,39 @@ const switchLang = (langCode: string, label: string) => {
 
 const menuList = [
   {
-    name: '首页',
+    name: '首頁',
     path: '/',
+  },
+  {
+    name: '獵人NFT',
+    path: '',
   },
   {
     name: '公告',
     path: '/notice',
   },
   {
-    name: '下载游戏',
-    path: '/downGame',
-  },
-  {
-    name: '游戏玩法',
+    name: '遊戲玩法',
     path: '/recommendGame',
   },
   {
-    name: '积分规则',
-    path: '/recommendIntegration',
+    name: '下載遊戲',
+    path: '/downGame',
   },
-  {
-    name: '联盟合作',
-    path: '/recommendBh',
-  },
+  // {
+  //   name: '积分规则',
+  //   path: '/recommendIntegration',
+  // },
+  // {
+  //   name: '联盟合作',
+  //   path: '/recommendBh',
+  // },
   {
     name: '白皮书',
     path: '',
   },
   {
-    name: '加入BH',
+    name: '加入Bounty Hunter',
     path: '',
   },
 ]

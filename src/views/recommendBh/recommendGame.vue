@@ -1,30 +1,66 @@
 <template>
   <div class="w-full pt-20 overflow-x-hidden">
     <div class="px-12">
-      <div class="text-white text-3xl font-bold tracking-[0.05em]">PVP模式：双猎之战</div>
-      <div class="text-white text-3xl font-bold tracking-[0.05em] py-2">唯快与策略者胜</div>
-
-      <div class="text-[#9f99a7] text-xs py-4 pb-8">在赏金猎人的世界里，速度即力量，精准即财富</div>
+      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]">玩法一：</div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] py-2">零成本體驗場</div>
     </div>
 
-    <div class="w-full flex flex-col items-center">
-      <div class="flex flex-col rounded-3xl px-6 py-8 max-w-[80vw] text-[#d3ced9] text-xs glass relative">
-        <img src="./images/pvp-image.png" alt="" class="w-40 max-w-[40vw] h-auto absolute -top-20 -right-20">
-        <span class="leading-6">在赏金猎人的世界里，</span>
-        <span class="leading-6">速度即力量，精准即财富。</span>
-        <span class="leading-6">当两名玩家踏入竞技场，计时开始，</span>
-        <span class="leading-6">金币散布在整张地图上。</span>
-        <span class="leading-6">没有运气，只有操作与判断，</span>
-        <span class="leading-6">一分钟内，谁能在混乱中夺取最多的金币，</span>
-        <span class="leading-6">谁就是最终的猎场之王。</span>
-        <span class="leading-6">赢家：获得 90% 总门票；</span>
-        <span class="leading-6">输家：按门票当前价值 100% 等值返还积分凭证；</span>
-        <span class="leading-6">生态基金：3% 总门票；</span>
-        <span class="leading-6">邀请奖励：7% 总门票。</span>
+    <div class="w-full flex flex-col items-center mt-10">
+      <div class="flex flex-col rounded-3xl px-6 py-8 w-82 max-w-[82vw] text-[#d3ced9] text-xs glass relative">
+        <img src="./images/pvp-image.png" alt="" class="w-50 max-w-[50vw] h-auto absolute -top-5 -right-25">
+        <span class="py-0.5 left-icon">參與條件：獵人通行證</span>
+        <span class="py-0.5 left-icon">每日上限：每張通行證最多 3 場/日</span>
+        <span class="py-0.5 left-icon">不需投入資金</span>
+        <span class="py-0.5 left-icon">用於培養 DAO 判斷與參與習慣</span>
+
+        <span class="text-[#AB60FF] font-bold pb-0.5 pt-4">BOOST 積分獎勵</span>
+        <span class="py-0.5">以積分算力挖礦方式產出 $BHC</span>
       </div>
     </div>
 
-    <div class="px-12 pt-10 flex flex-col items-end">
+    <div class="px-12 pt-16">
+      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]">玩法二：</div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2">PVP模式</div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2">雙獵之戰</div>
+    </div>
+
+    <div class="w-full flex flex-col items-center mt-10">
+      <div class="flex flex-col rounded-3xl px-6 py-8 w-82 max-w-[82vw] text-[#d3ced9] text-xs glass relative">
+        <img src="./images/topspeed-image.png" alt="" class="w-45 max-w-[45vw] h-auto absolute -top-10 -right-25">
+        <span class="py-0.5 left-icon">參與條件：持有獵人角色 NFT</span>
+        <span class="py-0.5 left-icon">每日上限：無限制</span>
+        <span class="py-0.5 left-icon">資金門檻：10-500 $MOVA</span>
+
+        <span class="text-[#AB60FF] font-bold pb-0.5 pt-4">遊戲競技獎勵（每局）</span>
+        <span class="py-0.5 left-icon">勝出者：80% 獎池 + BOOST 積分</span>
+        <span class="py-0.5 left-icon">未勝出者：BOOST 積分</span>
+        <span class="py-0.5 left-icon">國庫 → 20% 獎池</span>
+        <span class="py-0.5">(15% 每日持續匯入LP | 5% 注入動態獎池)</span>
+      </div>
+    </div>
+
+    <div class="px-12 pt-16">
+      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]">玩法三：</div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2">遊戲化預測市場</div>
+      <div class="text-[#d3ced9] text-3xl font-bold tracking-[0.05em] pt-2">(未來開放)</div>
+    </div>
+
+    <div class="w-full flex flex-col items-center mt-10 mb-20">
+      <div class="flex flex-col rounded-3xl px-6 py-8 w-82 max-w-[82vw] text-[#d3ced9] text-xs glass relative">
+        <img src="./images/game3.png" alt="" class="w-45 max-w-[45vw] h-auto absolute -top-10 -right-20">
+        <span class="py-0.5 left-icon">圍繞可驗證事件與數據結果</span>
+        <span class="py-0.5 left-icon">預測標的可來自：</span>
+        <span class="py-0.5">遊戲內事件</span>
+        <span class="py-0.5">DAO 提案結果</span>
+        <span class="py-0.5">鏈上或現實世界可驗證數據</span>
+
+        <span class="text-[#AB60FF] font-bold pb-0.5 pt-4">特點：</span>
+        <span class="py-0.5 left-icon">預測本身即是一種 DAO 治理行為</span>
+        <span class="py-0.5 left-icon">結果將直接影響 DAO 資源分配方向</span>
+      </div>
+    </div>
+
+    <!-- <div class="px-12 pt-10 flex flex-col items-end">
       <div class="text-white text-3xl font-bold tracking-[0.05em]">极速模式</div>
       <div class="text-white text-3xl font-bold tracking-[0.05em] py-2">一场与时间赛跑</div>
       <div class="text-white text-3xl font-bold tracking-[0.05em]">的收益狂潮</div>
@@ -50,7 +86,7 @@
         <span class="leading-6">生态基金：获得总奖池的 3%</span>
         <span class="leading-6">邀请奖励：获得总奖池的 7%</span>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -71,5 +107,21 @@ const toHome = () => {
 
   border-radius: 16px;
   // border: 1px solid rgba(255,255,255,0.25);    /* 高光边框，让轮廓更像玻璃 */   
+}
+
+.left-icon {
+  position: relative;
+  padding-left: 8px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #AB60FF;
+    top: 50%;
+    left: -4px;
+    transform: translateY(-50%);
+  }
 }
 </style>

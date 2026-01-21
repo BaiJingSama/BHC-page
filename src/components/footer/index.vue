@@ -9,7 +9,7 @@
     </div>
 
     <div class="w-full flex justify-center items-center py-5">
-      <span class="text-[#9f99a7] text-sm">链游革命，从这里开始</span>
+      <span class="text-[#9f99a7] text-sm">鏈遊革命，從這裡開始</span>
     </div>
 
     <div class="w-full flex justify-center items-center pt-2 pb-12">
@@ -33,10 +33,10 @@ const iconList = [
     image: tgIcon,
     class: ['w-8', 'max-w-[8vw]', ' h-auto, mr-3']
   },
-  {
-    image: dcIcon,
-    class: ['w-8', 'max-w-[8vw]', ' h-auto, mr-3']
-  },
+  // {
+  //   image: dcIcon,
+  //   class: ['w-8', 'max-w-[8vw]', ' h-auto, mr-3']
+  // },
   {
     image: emailIcon,
     class: ['w-8', 'max-w-[8vw]', ' h-auto']

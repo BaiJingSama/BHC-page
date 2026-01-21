@@ -3,7 +3,7 @@
     <div class="w-full flex flex-col items-center">
       <img src="./images/recommend-title-image.png" alt="" class="w-70 max-w-[70vw] h-auto">
       <div class="text-white text-xs flex flex-col items-center pb-8">
-        <div>顶级流量黑洞 × 价值重塑引擎</div>
+        <div>{{ $t('recommendBh.intro') }}</div>
         <div>首批次全球仅开放10个入驻名额</div>
       </div>
 

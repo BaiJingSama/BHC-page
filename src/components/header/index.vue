@@ -33,7 +33,7 @@
     <div class="w-full pt-10">
       <div @click="goPath(item.path)" v-for="(item, index) in menuList" :key="item.name"
         class="w-full text-white text-2xl font-bold px-6 py-4 border-[#322645] border-t-1"
-        :class="[index === menuList.length - 1 ? 'border-b-1' : '']">{{ item.name }}</div>
+        :class="[index === menuList.length - 1 ? 'border-b-1' : '']">{{ $t(item.name) }}</div>
     </div>
   </el-dialog>
 </template>
@@ -69,23 +69,23 @@ const switchLang = (langCode: string, label: string) => {
 
 const menuList = [
   {
-    name: '首頁',
+    name: 'header.home',
     path: '/',
   },
   {
-    name: '獵人NFT',
+    name: 'header.hunterNFT',
     path: '',
   },
   {
-    name: '公告',
+    name: 'header.announcements',
     path: '/notice',
   },
   {
-    name: '遊戲玩法',
+    name: 'header.gameplay',
     path: '/recommendGame',
   },
   {
-    name: '下載遊戲',
+    name: 'header.download',
     path: '/downGame',
   },
   // {
@@ -97,11 +97,11 @@ const menuList = [
   //   path: '/recommendBh',
   // },
   {
-    name: '白皮书',
+    name: 'header.whitepaper',
     path: '',
   },
   {
-    name: '加入Bounty Hunter',
+    name: 'header.join',
     path: '',
   },
 ]

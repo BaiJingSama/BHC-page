@@ -1,6 +1,4 @@
 {
-  "notice": {
-    "title": "Notice",
-    "intro": "This is the modular i18n text for the notice view"
-  }
+  "title": "Announcement",
+  "intro": "The first Gamified DAO Prediction Platform built on the MOVA ecosystem."
 }

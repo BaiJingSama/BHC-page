@@ -1,62 +1,62 @@
 <template>
   <div class="w-full pt-20 overflow-x-hidden">
     <div class="px-12">
-      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]">玩法一：</div>
-      <div class="text-white text-3xl font-bold tracking-[0.05em] py-2">零成本體驗場</div>
+      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]">{{ $t('recommendBh.mode1Title') }}</div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] py-2">{{ $t('recommendBh.mode1Subtitle') }}</div>
     </div>
 
     <div class="w-full flex flex-col items-center mt-10">
       <div class="flex flex-col rounded-3xl px-6 py-8 w-82 max-w-[82vw] text-[#d3ced9] text-xs glass relative">
         <img src="./images/pvp-image.png" alt="" class="w-50 max-w-[50vw] h-auto absolute -top-5 -right-25">
-        <span class="py-0.5 left-icon">參與條件：獵人通行證</span>
-        <span class="py-0.5 left-icon">每日上限：每張通行證最多 3 場/日</span>
-        <span class="py-0.5 left-icon">不需投入資金</span>
-        <span class="py-0.5 left-icon">用於培養 DAO 判斷與參與習慣</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode1Condition') }}</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode1Limit') }}</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode1NoFund') }}</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode1Purpose') }}</span>
 
-        <span class="text-[#AB60FF] font-bold pb-0.5 pt-4">BOOST 積分獎勵</span>
-        <span class="py-0.5">以積分算力挖礦方式產出 $BHC</span>
+        <span class="text-[#AB60FF] font-bold pb-0.5 pt-4">{{ $t('recommendBh.mode1RewardTitle') }}</span>
+        <span class="py-0.5">{{ $t('recommendBh.mode1Reward') }}</span>
       </div>
     </div>
 
     <div class="px-12 pt-16">
-      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]">玩法二：</div>
-      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2">PVP模式</div>
-      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2">雙獵之戰</div>
+      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]">{{ $t('recommendBh.mode2Title') }}</div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2">{{ $t('recommendBh.mode2Subtitle1') }}</div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2">{{ $t('recommendBh.mode2Subtitle2') }}</div>
     </div>
 
     <div class="w-full flex flex-col items-center mt-10">
       <div class="flex flex-col rounded-3xl px-6 py-8 w-82 max-w-[82vw] text-[#d3ced9] text-xs glass relative">
         <img src="./images/topspeed-image.png" alt="" class="w-45 max-w-[45vw] h-auto absolute -top-10 -right-25">
-        <span class="py-0.5 left-icon">參與條件：持有獵人角色 NFT</span>
-        <span class="py-0.5 left-icon">每日上限：無限制</span>
-        <span class="py-0.5 left-icon">資金門檻：10-500 $MOVA</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode2Condition') }}</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode2Limit') }}</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode2Threshold') }}</span>
 
-        <span class="text-[#AB60FF] font-bold pb-0.5 pt-4">遊戲競技獎勵（每局）</span>
-        <span class="py-0.5 left-icon">勝出者：80% 獎池 + BOOST 積分</span>
-        <span class="py-0.5 left-icon">未勝出者：BOOST 積分</span>
-        <span class="py-0.5 left-icon">國庫 → 20% 獎池</span>
-        <span class="py-0.5">(15% 每日持續匯入LP | 5% 注入動態獎池)</span>
+        <span class="text-[#AB60FF] font-bold pb-0.5 pt-4">{{ $t('recommendBh.mode2RewardTitle') }}</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode2Winner') }}</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode2Loser') }}</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode2Treasury') }}</span>
+        <span class="py-0.5">{{ $t('recommendBh.mode2TreasuryDetail') }}</span>
       </div>
     </div>
 
     <div class="px-12 pt-16">
-      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]">玩法三：</div>
-      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2">遊戲化預測市場</div>
-      <div class="text-[#d3ced9] text-3xl font-bold tracking-[0.05em] pt-2">(未來開放)</div>
+      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]">{{ $t('recommendBh.mode3Title') }}</div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2">{{ $t('recommendBh.mode3Subtitle') }}</div>
+      <div class="text-[#d3ced9] text-3xl font-bold tracking-[0.05em] pt-2">{{ $t('recommendBh.mode3Coming') }}</div>
     </div>
 
     <div class="w-full flex flex-col items-center mt-10 mb-20">
       <div class="flex flex-col rounded-3xl px-6 py-8 w-82 max-w-[82vw] text-[#d3ced9] text-xs glass relative">
         <img src="./images/game3.png" alt="" class="w-45 max-w-[45vw] h-auto absolute -top-10 -right-20">
-        <span class="py-0.5 left-icon">圍繞可驗證事件與數據結果</span>
-        <span class="py-0.5 left-icon">預測標的可來自：</span>
-        <span class="py-0.5">遊戲內事件</span>
-        <span class="py-0.5">DAO 提案結果</span>
-        <span class="py-0.5">鏈上或現實世界可驗證數據</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode3Description') }}</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode3Targets') }}</span>
+        <span class="py-0.5">{{ $t('recommendBh.mode3Target1') }}</span>
+        <span class="py-0.5">{{ $t('recommendBh.mode3Target2') }}</span>
+        <span class="py-0.5">{{ $t('recommendBh.mode3Target3') }}</span>
 
-        <span class="text-[#AB60FF] font-bold pb-0.5 pt-4">特點：</span>
-        <span class="py-0.5 left-icon">預測本身即是一種 DAO 治理行為</span>
-        <span class="py-0.5 left-icon">結果將直接影響 DAO 資源分配方向</span>
+        <span class="text-[#AB60FF] font-bold pb-0.5 pt-4">{{ $t('recommendBh.mode3Features') }}</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode3Feature1') }}</span>
+        <span class="py-0.5 left-icon">{{ $t('recommendBh.mode3Feature2') }}</span>
       </div>
     </div>
 

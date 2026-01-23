@@ -10,16 +10,16 @@
 
     <div class="absolute top-8 left-0 w-full px-5 pt-24 flex flex-col items-center">
       <div class="flex justify-center px-6">
-        <span class="text-[#AB60FF] text-5xl font-bold tracking-[.05em]">游戲下載</span>
+        <span class="text-[#AB60FF] text-5xl font-bold tracking-[.05em]">{{ $t('downGame.title') }}</span>
       </div>
 
       <div class="w-full flex justify-center">
         <!-- <img src="./images/league-bg.png" alt="" class="w-[140vw] max-w-none h-auto" style="min-width:600px;" /> -->
         <div class="text-[#9f99a7] flex flex-col item-center justify-center  text-xs z-10 pt-8 text-center">
-          <span class="py-0.5">這不是一個單純的遊戲</span>
-          <span class="py-0.5">也不是傳統預測市場</span>
-          <span class="py-0.5">而是一套 「遊戲化的 DAO 決策與價值分配系統」</span>
-          <span class="py-0.5">不論輸贏，所有參與行為的價值不被淘汰，只被重新分配</span>
+          <span class="py-0.5">{{ $t('downGame.doc1') }}</span>
+          <span class="py-0.5">{{ $t('downGame.doc2') }}</span>
+          <span class="py-0.5">{{ $t('downGame.doc3') }}</span>
+          <span class="py-0.5">{{ $t('downGame.doc4') }}</span>
         </div>
       </div>
 
@@ -29,8 +29,8 @@
 
 
     <div class="w-full absolute bottom-15 left-0 flex items-center justify-center text-white text-xs">
-      <div class="px-6 py-3 rounded-lg mr-8 bg-[#ab60ff]">IOS下载</div>
-      <div class="px-6 py-3 rounded-lg bg-[#ab60ff]">安卓下载</div>
+      <div class="px-6 py-3 rounded-lg mr-8 bg-[#ab60ff]">{{ $t('downGame.iosButton') }}</div>
+      <div class="px-6 py-3 rounded-lg bg-[#ab60ff]">{{ $t('downGame.androidButton') }}</div>
     </div>
   </div>
 </template>

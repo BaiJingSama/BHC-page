@@ -1,6 +1,9 @@
 {
-  "downGame": {
-    "title": "Download Game",
-    "intro": "This is the modular translation for the download game view"
-  }
+  "title": "Download",
+  "doc1": "This is not just a game.",
+  "doc2": "This is not a traditional prediction market.",
+  "doc3": "It is a gamified DAO decision and value-distribution system.",
+  "doc4": "No matter who wins or loses,all participation value is preserved and redistributed.",
+  "iosButton": "Download for iOS",
+  "androidButton": "Download for Android"
 }

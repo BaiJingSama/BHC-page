@@ -2,44 +2,56 @@ import { createI18n } from 'vue-i18n'
 import zh from '../locales/zh.json'
 import en from '../locales/en.json'
 
-// 基础消息（全局）
-const messages = {
+const messages= {
   zh: { ...zh },
   en: { ...en },
 }
 
-// 自动加载每个 views 下的模块化 locales（按文件夹作为 namespace）
-// 例如: src/views/home/locales/zh.json -> namespace = home, locale = zh
-const modules = import.meta.glob('../views/**/locales/*.json', { eager: true })
-for (const path in modules) {
-  const mod = modules[path]
-  // 模块可能以 default 导出也可能直接导出对象
-  const data = mod && (mod.default ?? mod)
-  if (!data) continue
+// 直接导入所有视图的语言文件
+import homeZh from '../views/home/locales/zh.json'
+import homeEn from '../views/home/locales/en.json'
+import downGameZh from '../views/downGame/locales/zh.json'
+import downGameEn from '../views/downGame/locales/en.json'
+import recommendBhZh from '../views/recommendBh/locales/zh.json'
+import recommendBhEn from '../views/recommendBh/locales/en.json'
+import noticeZh from '../views/notice/locales/zh.json'
+import noticeEn from '../views/notice/locales/en.json'
 
-  // 从路径提取 locale 和 namespace
-  // path 示例: "../views/home/locales/zh.json"
-  const parts = path.split('/')
-  const filename = parts[parts.length - 1] // zh.json
-  const locale = filename.replace(/\.json$/i, '')
-  const namespace = parts[parts.length - 3] // home
+// 合并到messages对象，使用扩展运算符确保主语言文件的内容不被覆盖
+messages.zh = {
+  ...messages.zh,
+  home: { ...homeZh },
+  downGame: { ...downGameZh },
+  recommendBh: { ...recommendBhZh },
+  notice: { ...noticeZh }
+}
 
-  // 支持两种文件结构：{ "home": { ... } } 或直接 { ... }
-  const nsData = data[namespace] ?? data
-
-  messages[locale] = messages[locale] || {}
-  messages[locale][namespace] = {
-    ...(messages[locale][namespace] || {}),
-    ...nsData,
-  }
+messages.en = {
+  ...messages.en,
+  home: { ...homeEn },
+  downGame: { ...downGameEn },
+  recommendBh: { ...recommendBhEn },
+  notice: { ...noticeEn }
 }
 
 const i18n = createI18n({
-  legacy: false, // 使用 Composition API
-  globalInjection: true, // 可在模板中直接使用 $t
-  locale: 'zh',
+  legacy: true, // 使用兼容模式，支持$t()语法
+  globalInjection: true,
+  locale: localStorage.getItem('locale') || 'zh',
   fallbackLocale: 'en',
   messages,
+})
+
+// 添加调试信息
+console.log('i18n配置:', {
+  locale: i18n.global.locale,
+  fallbackLocale: i18n.global.fallbackLocale,
+  messages: {
+    zh: Object.keys(messages.zh),
+    en: Object.keys(messages.en)
+  },
+  homeMessagesZh: Object.keys(messages.zh.home || {}),
+  homeMessagesEn: Object.keys(messages.en.home || {})
 })
 
 export default i18n

@@ -1,6 +1,37 @@
 {
-  "recommendBh": {
-    "title": "About BH",
-    "intro": "This is the modular translation for the recommendBh view"
-  }
+  "title": "About BH",
+  "intro": "This is the modular translation for the recommendBh view",
+  
+  "mode1Title": "Mode 1:",
+  "mode1Subtitle": "Zero-Cost Trial",
+  "mode1Condition": "Participation: Hunter Pass",
+  "mode1Limit": "Daily Limit: Max 3 games/day per pass",
+  "mode1NoFund": "No capital required",
+  "mode1Purpose": "To cultivate DAO judgment and participation habits",
+  "mode1RewardTitle": "BOOST Point Rewards",
+  "mode1Reward": "Generate $BHC through point-based mining",
+  
+  "mode2Title": "Mode 2:",
+  "mode2Subtitle1": "PVP Mode",
+  "mode2Subtitle2": "Dual Hunt",
+  "mode2Condition": "Participation: Own Hunter Role NFT",
+  "mode2Limit": "Daily Limit: Unlimited",
+  "mode2Threshold": "Capital Threshold: 10-500 $MOVA",
+  "mode2RewardTitle": "Game Competition Rewards (per game)",
+  "mode2Winner": "Winner: 80% of prize pool + BOOST points",
+  "mode2Loser": "Loser: Only BOOST points",
+  "mode2Treasury": "Treasury → 20% of prize pool",
+  "mode2TreasuryDetail": "(15% continuously added to LP | 5% injected into dynamic prize pool)",
+  
+  "mode3Title": "Mode 3:",
+  "mode3Subtitle": "Gamified Prediction Market",
+  "mode3Coming": "(Coming Soon)",
+  "mode3Description": "Focus on verifiable events and data results",
+  "mode3Targets": "Prediction targets can come from:",
+  "mode3Target1": "In-game events",
+  "mode3Target2": "DAO proposal results",
+  "mode3Target3": "On-chain or real-world verifiable data",
+  "mode3Features": "Features:",
+  "mode3Feature1": "Prediction itself is a DAO governance behavior",
+  "mode3Feature2": "Results directly affect DAO resource allocation"
 }

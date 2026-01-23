@@ -14,20 +14,20 @@
 
 
       <div class="flex flex-col px-5 py-10">
-        <span class="text-[#AB60FF] ml-2 text-4xl font-bold tracking-[.05em]">{{ $t('home.title') }}</span>
+        <span class="text-[#AB60FF] text-4xl font-bold tracking-[.05em]">{{ $t('home.title') }}</span>
         <span class="text-[#9f99a7] text-xs pt-4">{{ $t('home.intro') }}</span>
       </div>
 
       <div class="backdrop-filter px-4 text-xs w-full">
         <div class="w-full py-6 pt-8 flex flex-col items-center">
           <img src="./images/home-introduce.png" alt="" class="w-64 max-w-[78vw] h-auto mb-4">
-          <div>基於 MOVA 生態的首個遊戲化 DAO 預測平台</div>
-          <div>同時為 MOVA × USD1Swap 黑客松生態孵化項目</div>
-          <div>並已獲得 100 萬 USD1 投資支持</div>
+          <div>{{ $t('home.introDoc1') }}</div>
+          <div>{{ $t('home.introDoc2') }}</div>
+          <div>{{ $t('home.introDoc3') }}</div>
         </div>
         <div class="w-full pb-6 flex flex-col items-center">
-          <span class="xs-text left-dot">將預測行為、決策過程、資金流向，壓縮進統一的遊戲化場景中</span>
-          <span class="xs-text left-dot">不論輸贏，所有參與行為的價值不被淘汰，只被重新分配</span>
+          <span class="xs-text left-dot">{{ $t('home.introDoc4') }}</span>
+          <span class="xs-text left-dot">{{ $t('home.introDoc5') }}</span>
         </div>
       </div>
     </div>
@@ -36,8 +36,8 @@
 
     <div class="w-full px-5 relative ">
       <div class="flex flex-col justify-center px-6 py-12 text-center">
-        <span class=" text-5xl font-bold tracking-[.05em] text-[#AB60FF]">獵人盲盒</span>
-        <div class="text-white text-xs pt-3">進入遊戲對戰、預測與價值分配系統的唯一入口</div>
+        <span class=" text-5xl font-bold tracking-[.05em] text-[#AB60FF]">{{ $t('home.HunterTitle') }}</span>
+        <div class="text-white text-xs pt-3">{{ $t('home.HunterDoc') }}</div>
       </div>
 
       <img src="./images/home-bg-1.png" alt="" class="absolute left-3 top-20 w-100 max-w-[100vw] h-auto z-[1]">
@@ -71,29 +71,29 @@
         <div class="w-25 h-25 relative rounded-full border-[#D687FF] border-[3px]">
           <img src="./images/box-1.png" alt="" class="absolute -left-1 top-0 w-25 max-w-[25vw] h-auto z-[1]">
         </div>
-        <span class="pt-2 text-white text-xs">白銀盲盒</span>
+        <span class="pt-2 text-white text-xs">{{ $t('home.Box1') }}</span>
       </div>
       <div class="flex flex-col items-center">
         <div class="w-25 h-25 relative rounded-full border-[#D687FF] border-[3px]">
           <img src="./images/box-2.png" alt="" class="absolute -left-1 top-0 w-25 max-w-[25vw] h-auto z-[1]">
         </div>
-        <span class="pt-2 text-white text-xs">黃金盲盒</span>
+        <span class="pt-2 text-white text-xs">{{ $t('home.Box2') }}</span>
       </div>
       <div class="flex flex-col items-center">
         <div class="w-25 h-25 relative rounded-full border-[#D687FF] border-[3px]">
           <img src="./images/box-3.png" alt="" class="absolute -left-1 top-0 w-25 max-w-[25vw] h-auto z-[1]">
         </div>
-        <span class="pt-2 text-white text-xs">史詩盲盒</span>
+        <span class="pt-2 text-white text-xs">{{ $t('home.Box3') }}</span>
       </div>
     </div>
 
     <div class="w-full px-5 pt-10">
       <div class="backdrop-filter px-4 text-xs w-full">
-        <p class="py-4 text-sm text-white font-bold flex justify-center">獵人NFT 是長期參與平台行為與價值分配的權益憑證</p>
+        <p class="py-4 text-sm text-white font-bold flex justify-center">{{ $t('home.HunterText1') }}</p>
         <div class="w-full pb-6 flex flex-col items-center">
-          <span class="xs-text left-dot pb-2">每一個獵人角色，都是你的遊戲資產</span>
-          <span class="xs-text left-dot pb-2">每一次對戰，都為你累積可結算價值</span>
-          <span class="xs-text left-dot">每一次系統分配，都與你直接相關</span>
+          <span class="xs-text left-dot pb-2">{{ $t('home.HunterText2') }}</span>
+          <span class="xs-text left-dot pb-2">{{ $t('home.HunterText3') }}</span>
+          <span class="xs-text left-dot">{{ $t('home.HunterText4') }}</span>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@
       <img src="./images/right-arrow.png" alt="" class="w-10 max-w-[10vw] h-auto arrow-breathe arrow-left" />
 
       <div class="w-35 py-3 text-center text-white text-sm font-bold bg">
-        立即搶購
+        {{ $t('home.button1') }}
       </div>
 
       <!-- 右箭头：向左呼吸 -->
@@ -118,29 +118,30 @@
       </div>
 
       <div class="flex flex-col px-6">
-        <span class="text-[#AB60FF] pb-4 text-5xl font-bold text-center tracking-[0.1em]">游戏模式</span>
+        <span class="text-[#AB60FF] pb-4 text-5xl font-bold text-center tracking-[0.1em]">{{ $t('home.gameModel')
+          }}</span>
       </div>
 
-      <div class="w-full flex items-center gap-4 justify-center pt-6 text-white text-xs">
+      <div class="w-full flex items-center gap-4 flex-wrap justify-center pt-6 text-white text-xs">
         <div class="px-4 py-3 rounded-lg" :class="[currentMode === 1 ? 'bg-[#ab60ff]' : 'bg-[#230a45]']"
-          @click="currentMode = 1">零成本體驗場</div>
+          @click="currentMode = 1">{{ $t('home.gameModelTitle1') }}</div>
         <div class="px-4 py-3 rounded-lg" :class="[currentMode === 2 ? 'bg-[#ab60ff]' : 'bg-[#230a45]']"
-          @click="currentMode = 2">PVP模式</div>
+          @click="currentMode = 2">{{ $t('home.gameModelTitle2') }}</div>
         <div class="px-4 py-3 rounded-lg" :class="[currentMode === 3 ? 'bg-[#ab60ff]' : 'bg-[#230a45]']"
-          @click="currentMode = 3">預測模式</div>
+          @click="currentMode = 3">{{ $t('home.gameModelTitle3') }}</div>
       </div>
 
       <div class="flex flex-col gap-3 text-[#9f99a7] text-xs py-8 px-8">
         <div class="flex flex-col" v-if="showModeData.mode !== 3" v-for="(item, index) in showModeData.textList"
           :key="index">
-          <span class="py-0.5" v-for="textItem in item" :key="textItem">{{ textItem }}</span>
+          <span class="py-0.5" v-for="textItem in item" :key="textItem">{{ $t(textItem) }}</span>
         </div>
         <div class="flex flex-col" v-else v-for="(item) in showModeData.textList">
           <template v-for="textItem in item">
             <span class="px-2 py-0.5" v-if="!textItem.isTitle" :class="[textItem.leftIcon ? 'left-icon' : '']">
-              {{ textItem.text }}
+              {{ $t(textItem.text) }}
             </span>
-            <span class="text-[#AB60FF] font-bold py-0.5" v-else>{{ textItem.text }}</span>
+            <span class="text-[#AB60FF] font-bold py-0.5" v-else>{{ $t(textItem.text) }}</span>
           </template>
         </div>
       </div>
@@ -150,7 +151,7 @@
     <!-- 积分系统 -->
     <div class="w-full px-5">
       <div class="flex justify-center px-6 py-12 pb-12">
-        <span class="text-[#AB60FF] text-4xl font-bold tracking-[.05em]">Boost 積分系統</span>
+        <span class="text-[#AB60FF] text-4xl font-bold tracking-[.05em]">{{ $t('home.PointsTitle') }}</span>
       </div>
 
       <div class="flex justify-center w-full -mt-6">
@@ -158,38 +159,38 @@
       </div>
 
       <div class="flex flex-col font-thin pt-10 px-12  text-[#9f99a7] text-xs">
-        <span class="text-white font-bold pb-2">不是獎勵，而是每日都在累積的「挖礦權重」</span>
+        <span class="text-white font-bold pb-2">{{ $t('home.PointsDoc1') }}</span>
 
-        <span class="py-0.5">Boost 積分是 Bounty Hunter 生態中的核心行為積分</span>
-        <span class="py-0.5">不直接兌換價值，是每日挖礦分配的唯一計算依據</span>
-        <span class="py-0.5">这是一個只獎勵「行為」與「時間」的系統</span>
-        <span class="py-0.5">每一次行為，都會增加你的 Boost積分</span>
+        <span class="py-0.5">{{ $t('home.PointsDoc2') }}</span>
+        <span class="py-0.5">{{ $t('home.PointsDoc3') }}</span>
+        <span class="py-0.5">{{ $t('home.PointsDoc4') }}</span>
+        <span class="py-0.5">{{ $t('home.PointsDoc5') }}</span>
       </div>
     </div>
 
     <!-- 联盟生态 -->
     <div class="w-full px-5 pt-24">
       <div class="flex justify-center px-6">
-        <span class="text-[#AB60FF] text-5xl font-bold tracking-[.05em]">聯盟生態</span>
+        <span class="text-[#AB60FF] text-5xl font-bold tracking-[.05em]">{{ $t('home.allianceTitle') }}</span>
       </div>
 
       <div class="w-full flex justify-center">
         <!-- <img src="./images/league-bg.png" alt="" class="w-[140vw] max-w-none h-auto" style="min-width:600px;" /> -->
         <div class="text-[#9f99a7] flex flex-col item-center justify-center  text-xs z-10 pt-8 text-center">
-          <div class="py-3 font-bold text-white">「行為聚合 × 價值分配單元」</div>
-          <span class="py-0.5">它不是單純的合作名單</span>
-          <span class="py-0.5">而是一個可被接入、可被計算、可被分潤的生態層</span>
-          <span class="py-0.5">每一個聯盟，皆可在 Bounty Hunter 內建立參與專區</span>
-          <span class="py-0.5">聯盟不是被動導流，而是擁有「自己的戰場」</span>
+          <div class="py-3 font-bold text-white">{{ $t('home.allianceDoc1') }}</div>
+          <span class="py-0.5">{{ $t('home.allianceDoc2') }}</span>
+          <span class="py-0.5">{{ $t('home.allianceDoc3') }}</span>
+          <span class="py-0.5">{{ $t('home.allianceDoc4') }}</span>
+          <span class="py-0.5">{{ $t('home.allianceDoc5') }}</span>
         </div>
       </div>
 
       <div class="w-full px-5 pt-20">
         <div class="backdrop-filter py-4 px-4 text-xs w-full flex flex-col items-center">
           <img src="./images/ecology-bg.png" alt="" class="w-60 max-w-[60vw] h-auto -mt-20 mb-6">
-          <span class="py-0.5">在這裡</span>
-          <span class="py-0.5">其他生態、社群、項目方不只是「曝光合作」</span>
-          <span class="py-0.5">而是以行為與真實流水，參與整個系統的價值循環</span>
+          <span class="py-0.5">{{ $t('home.allianceDoc6') }}</span>
+          <span class="py-0.5">{{ $t('home.allianceDoc7') }}</span>
+          <span class="py-0.5">{{ $t('home.allianceDoc8') }}</span>
         </div>
       </div>
 
@@ -198,7 +199,7 @@
         <img src="./images/right-arrow.png" alt="" class="w-10 max-w-[10vw] h-auto arrow-breathe arrow-left" />
 
         <div class="w-35 py-3 text-center text-white text-sm font-bold bg">
-          立即申請聯盟合作
+          {{ $t('home.allianceButton') }}
         </div>
 
         <!-- 右箭头：向左呼吸 -->
@@ -209,23 +210,23 @@
     <!-- 未来蓝图 -->
     <div class="w-full">
       <div class="flex flex-col justify-center px-6 py-12 text-center">
-        <span class="text-[#AB60FF] text-5xl font-bold tracking-[.05em]">未来蓝图</span>
-        <div class="text-white text-xs pt-4">從遊戲，到生態</div>
+        <span class="text-[#AB60FF] text-5xl font-bold tracking-[.05em]">{{ $t('home.RoadmapTitle') }}</span>
+        <div class="text-white text-xs pt-4">{{ $t('home.RoadmapDoc') }}</div>
       </div>
 
       <div class="flex justify-between px-4">
         <div v-for="item in nextTopData" :key="item.indexNum"
           class="w-30 max-w-[30vw] rounded-lg bg-[#170a2d] px-2 py-2">
           <div class="flex justify-between items-center">
-            <span class="text-[#ab60ff] text-3xl font-bold">{{ item.indexNum }}</span>
+            <span class="text-[#ab60ff] text-3xl font-bold">{{ $t(item.indexNum) }}</span>
             <!-- <span class="text-white text-sm">{{ item.indexZh }}</span> -->
             <div class="flex flex-col">
-              <span class="text-white text-[10px]">{{ item.indexZh }}</span>
-              <span class="text-[#9f99a7] text-[8px]">{{ item.indexDoc }}</span>
+              <span class="text-white text-[10px]">{{ $t(item.indexZh) }}</span>
+              <span class="text-[#9f99a7] text-[8px]">{{ $t(item.indexDoc) }}</span>
             </div>
           </div>
           <div class="flex flex-col pt-1">
-            <span v-for="text in item.textList" :key="text" class="text-[#9f99a7] text-[8px] py0.5">{{ text }}</span>
+            <span v-for="text in item.textList" :key="text" class="text-[#9f99a7] text-[8px] py0.5">{{ $t(text) }}</span>
           </div>
         </div>
       </div>
@@ -244,22 +245,23 @@
         <div v-for="item in nextBottomData" :key="item.indexNum"
           class="w-30 max-w-[30vw] rounded-lg bg-[#170a2d] px-2 py-2">
           <div class="flex justify-between items-center">
-            <span class="text-[#ab60ff] text-3xl font-bold">{{ item.indexNum }}</span>
+            <span class="text-[#ab60ff] text-3xl font-bold">{{ $t(item.indexNum) }}</span>
+            <!-- <span class="text-white text-sm">{{ item.indexZh }}</span> -->
             <div class="flex flex-col">
-              <span class="text-white text-[10px]">{{ item.indexZh }}</span>
-              <span class="text-[#9f99a7] text-[8px]">{{ item.indexDoc }}</span>
+              <span class="text-white text-[10px]">{{ $t(item.indexZh) }}</span>
+              <span class="text-[#9f99a7] text-[8px]">{{ $t(item.indexDoc) }}</span>
             </div>
           </div>
           <div class="flex flex-col pt-1">
-            <span v-for="text in item.textList" :key="text" class="text-[#9f99a7] text-[8px] py.5">{{ text }}</span>
+            <span v-for="text in item.textList" :key="text" class="text-[#9f99a7] text-[8px] py.5">{{ $t(text) }}</span>
           </div>
         </div>
       </div>
     </div>
 
     <div class="w-full flex flex-col text-center items-center justify-center py-10 text-[#9f99a7]">
-      <span class="text-3xl font-bold">我們不追隨趨勢</span>
-      <span class="text-3xl font-bold pt-2">我們創造賽道</span>
+      <span class="text-3xl font-bold">{{ $t('home.bottomTitle1') }}</span>
+      <span class="text-3xl font-bold pt-2">{{ $t('home.bottomTitle2') }}</span>
     </div>
 
 
@@ -267,8 +269,10 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, nextTick, computed } from 'vue'
+import { ref, reactive, nextTick, computed, watch } from 'vue'
 import carouselImage1 from './images/carousel-1.png'
+import i18n from '../../plugins/i18n'
+
 // import pvpImage from './images/pvp-game-image.png'
 // import topspeedImage from './images/topspeed-game-image.png'
 
@@ -282,6 +286,15 @@ import gameModeImg3 from './images/game-type-3.png'
 //   router.push(`/${path}`)
 // }
 
+const lang = computed(() => i18n.global.locale.value)
+
+watch(
+  () => i18n.global.locale,
+  (val: string) => {
+    console.log(lang.value)
+  },
+  { deep: true }
+)
 
 const carouselList = ref([
   carouselImage1,
@@ -320,24 +333,24 @@ const showModeData = computed(() => {
   return gameModeList.find(item => item.mode === currentMode.value)
 })
 
-const gameModeList = [
+const gameModeList = reactive([
   {
     mode: 1,
     img: gameModeImg1,
-    textList :[
-      ['低門檻進場，以最小成本進入對戰與價值系統', '持有任意 NFT 即可參與'],
-      ['用於培養玩家的 DAO 判斷能力與長期參與習慣', '讓每一次行為都成為經驗與價值的累積'],
-      ['這不是短期博弈，而是一條可持續參與、可逐步升級的成長路徑']
+    textList: [
+      ['home.gameModel1Text1', 'home.gameModel1Text2'],
+      ['home.gameModel1Text3', 'home.gameModel1Text4'],
+      ['home.gameModel1Text5', 'home.gameModel1Text6']
     ]
   },
   {
     mode: 2,
     img: gameModeImg2,
     textList: [
-      ['PVP 模式是核心對戰場景，玩家即時匹配，鏈上結算', '每一次對戰，都是一次判斷與策略的正面交鋒'],
-      ['實際上，這是一個充滿不確定性的戰場', '結果並非單一因素決定，是實力 × 運氣的共同作用'],
-      ['勝負不再是唯一價值來源','每一次參與，都留下可結算、可累積的價值']
-    ]
+      ['home.gameModel2ext1', 'home.gameModel2ext2', 'home.gameModel2ext3'],
+      ['home.gameModel2ext4', 'home.gameModel2ext5'],
+      ['home.gameModel2ext6', 'home.gameModel2ext7']
+    ] 
   },
   {
     mode: 3,
@@ -345,44 +358,44 @@ const gameModeList = [
     textList: [
       [
         {
-          text: '圍繞可驗證事件與數據結果',
+          text: 'home.gameModel3ext1',
           leftIcon: true,
           isTitle: false
         },
         {
-          text: '預測標的可來自：',
+          text: 'home.gameModel3ext2',
           leftIcon: true,
           isTitle: false
         },
         {
-          text: '遊戲內事件',
+          text: 'home.gameModel3ext3',
           leftIcon: false,
           isTitle: false
         },
         {
-          text: 'DAO 提案結果',
+          text: 'home.gameModel3ext4',
           leftIcon: false,
           isTitle: false
         },
         {
-          text: '鏈上或現實世界可驗證數據',
+          text: 'home.gameModel3ext5',
           leftIcon: false,
           isTitle: false
         },
       ],
       [
         {
-          text: '特點：',
+          text: 'home.gameModel3ext6',
           isTitle: true,
           leftIcon: false
         },
         {
-          text: '預測本身即是一種 DAO 治理行為',
+          text: 'home.gameModel3ext7',
           leftIcon: true,
           isTitle: false
         },
         {
-          text: '結果將直接影響 DAO 資源分配方向',
+          text: 'home.gameModel3ext8',
           leftIcon: true,
           isTitle: false
         }
@@ -390,46 +403,46 @@ const gameModeList = [
     ],
 
   }
-]
+])
 
 const nextTopData = [
   {
     indexNum: '01',
-    indexZh: '阶段一',
-    indexDoc: '(2026Q1)',
-    textList: ['MOVA首發上線', '獵人盲盒 DApp 上線', '開放獵人 NFT 發售，$BHC發佈', '積分代幣挖矿，遊戲正式上線', '開放零擼與 PVP 模式','動態獎金池正式啟動']
+    indexZh: 'home.nextData1Index',
+    indexDoc: 'home.nextData1IndexDoc',
+    textList: ['home.nextData1Text1', 'home.nextData1Text2', 'home.nextData1Text3', 'home.nextData1Text4', 'home.nextData1Text5', 'home.nextData1Text6']
   },
   {
     indexNum: '02',
-    indexZh: '阶段二',
-    indexDoc: '(2026Q2)',
-    textList: ['開啟 DAO 治理，$BHC成為跨鏈', '鏈遊生態治理核心代幣', '推出多人戰場與大型公會戰', '（4 人 / 8 人團隊戰、聯盟對戰）','史詩盲盒正式開售']
+    indexZh: 'home.nextData2Index',
+    indexDoc: 'home.nextData2IndexDoc',
+    textList: ['home.nextData2Text1', 'home.nextData2Text2', 'home.nextData2Text3', 'home.nextData2Text4', 'home.nextData2Text5']
   },
   {
     indexNum: '03',
-    indexZh: '阶段三',
-    indexDoc: '(2026Q3)',
-    textList: ['開放預測等更多進階遊戲模式', '完成生態閉環','$BHC價值全面提升']
+    indexZh: 'home.nextData3Index',
+    indexDoc: 'home.nextData3IndexDoc',
+    textList: ['home.nextData3Text1', 'home.nextData3Text2']
   }
 ]
 const nextBottomData = [
   {
     indexNum: '04',
-    indexZh: '阶段四',
-    indexDoc: '(2026Q4)',
-    textList: ['成立 BountyHunter Labs', '投資並孵化鏈遊或基礎設施專案', '積分商城開放','支持實體兌換與NFT聯動消費']
+    indexZh: 'home.nextData4Index',
+    indexDoc: 'home.nextData4IndexDoc',
+    textList: ['home.nextData4Text1', 'home.nextData4Text2', 'home.nextData4Text3', 'home.nextData4Text4']
   },
   {
     indexNum: '05',
-    indexZh: '阶段五',
-    indexDoc: '(2027Q1)',
-    textList: ['登陸 Top 10 交易平台', '完成 DEX + CEX 生態互聯', '推出 BountyHunter U 卡系統','實現虛擬與現實世界的消費對接']
+    indexZh: 'home.nextData5Index',
+    indexDoc: 'home.nextData5IndexDoc',
+    textList: ['home.nextData5Text1', 'home.nextData5Text2', 'home.nextData5Text3', 'home.nextData5Text4']
   },
   {
     indexNum: '06',
-    indexZh: '阶段六',
-    indexDoc: '(2027+)',
-    textList: ['打造涵蓋鏈遊、娛樂', '商城等場景的全球化結算體系']
+    indexZh: 'home.nextData6Index',
+    indexDoc: 'home.nextData6IndexDoc',
+    textList: ['home.nextData6Text1']
   }
 ]
 </script>
@@ -627,9 +640,10 @@ const nextBottomData = [
   }
 }
 
-.left-icon{
+.left-icon {
   position: relative;
-  &::before{
+
+  &::before {
     content: '';
     position: absolute;
     width: 2px;

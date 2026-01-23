@@ -1,6 +1,37 @@
 {
-  "recommendBh": {
-    "title": "了解BH",
-    "intro": "这是了解BH页面的模块化翻译"
-  }
+  "title": "了解BH",
+  "intro": "这是了解BH页面的模块化翻译",
+  
+  "mode1Title": "玩法一：",
+  "mode1Subtitle": "零成本體驗場",
+  "mode1Condition": "參與條件：獵人通行證",
+  "mode1Limit": "每日上限：每張通行證最多 3 場/日",
+  "mode1NoFund": "不需投入資金",
+  "mode1Purpose": "用於培養 DAO 判斷與參與習慣",
+  "mode1RewardTitle": "BOOST 積分獎勵",
+  "mode1Reward": "以積分算力挖礦方式產出 $BHC",
+  
+  "mode2Title": "玩法二：",
+  "mode2Subtitle1": "PVP模式",
+  "mode2Subtitle2": "雙獵之戰",
+  "mode2Condition": "參與條件：持有獵人角色 NFT",
+  "mode2Limit": "每日上限：無限制",
+  "mode2Threshold": "資金門檻：10-500 $MOVA",
+  "mode2RewardTitle": "遊戲競技獎勵（每局）",
+  "mode2Winner": "勝出者：80% 獎池 + BOOST 積分",
+  "mode2Loser": "未勝出者：BOOST 積分",
+  "mode2Treasury": "國庫 → 20% 獎池",
+  "mode2TreasuryDetail": "(15% 每日持續匯入LP | 5% 注入動態獎池)",
+  
+  "mode3Title": "玩法三：",
+  "mode3Subtitle": "遊戲化預測市場",
+  "mode3Coming": "(未來開放)",
+  "mode3Description": "圍繞可驗證事件與數據結果",
+  "mode3Targets": "預測標的可來自：",
+  "mode3Target1": "遊戲內事件",
+  "mode3Target2": "DAO 提案結果",
+  "mode3Target3": "鏈上或現實世界可驗證數據",
+  "mode3Features": "特點：",
+  "mode3Feature1": "預測本身即是一種 DAO 治理行為",
+  "mode3Feature2": "結果將直接影響 DAO 資源分配方向"
 }

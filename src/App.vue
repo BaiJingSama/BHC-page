@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-[#0e0024]">
+  <div class="flex-col flex justify-center mx-auto relative bg-[#0e0024]">
     <HeaderComponent />
 
     <main class="">

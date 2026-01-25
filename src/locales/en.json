@@ -15,5 +15,8 @@
     "gameplay": "Gameplay",
     "whitepaper": "Whitepaper",
     "join": "Join Bounty Hunter"
+  },
+  "footer": {
+    "bottomText": "The GameFi Revolution Starts Here"
   }
 }

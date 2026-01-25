@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: MonumentExtended-Ultrabold;
+  src: url('./src/assets/MonumentExtended-Ultrabold.otf');
+}
+
+.english-title{
+  font-family: MonumentExtended-Ultrabold;
+}

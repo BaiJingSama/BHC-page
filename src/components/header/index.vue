@@ -1,8 +1,8 @@
 <template>
-  <div class="flex justify-between items-center px-6 py-2 sm:px-8 h-16 fixed inset-x-0 top-0 z-50 bg-[rgba(255,255,255,0.1)]
+  <div class="flex justify-between items-center px-6 py-2 sm:px-8 h-16 fixed inset-x-0 top-0 z-50 bg-[#0e0024]
     shadow-[0px_0px_6px_0px_rgba(0,0,0,0.64),_-3px_4px_0px_0px_rgba(0,0,0,0.3)]
     rounded-[114px]
-    border-[1px]
+    border-[2px]
     border-[rgba(255,255,255,0.43)]">
     <img src="./images/header-logo.png" alt="" class="shrink-0 w-84 max-w-[34vw] h-auto" />
     <div class="flex items-center gap-2">
@@ -16,7 +16,7 @@
         </button>
         <template #dropdown>
           <el-dropdown-menu class="dropdown-menu">
-            <el-dropdown-item :icon="Plus" @click="() => switchLang('zh', '简体中文')">简体中文</el-dropdown-item>
+            <el-dropdown-item :icon="Plus" @click="() => switchLang('zh', '简体中文')">繁體中文</el-dropdown-item>
             <el-dropdown-item :icon="Plus" @click="() => switchLang('en', 'English')">English</el-dropdown-item>
           </el-dropdown-menu>
         </template>
@@ -32,7 +32,7 @@
   <el-dialog custom-class="more-dialog" :append-to-body="false" v-model="dialogVisible" fullscreen>
     <div class="w-full pt-10">
       <div @click="goPath(item.path)" v-for="(item, index) in menuList" :key="item.name"
-        class="w-full text-white text-2xl font-bold px-6 py-4 border-[#322645] border-t-1"
+        class="w-full text-white text-2xl font-bold px-6 py-4 english-title border-[#322645] border-t-1"
         :class="[index === menuList.length - 1 ? 'border-b-1' : '']">{{ $t(item.name) }}</div>
     </div>
   </el-dialog>

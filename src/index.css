@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: MonumentExtended-Ultrabold;
-  src: url('./src/assets/MonumentExtended-Ultrabold.otf');
+  src: url('./public/MonumentExtended-Ultrabold.otf');
 }
 
 .english-title{

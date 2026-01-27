@@ -1,8 +1,9 @@
 <template>
   <div class="w-full pt-20">
-    <div class="flex flex-col px-12">
-      <span class="text-[#AB60FF] text-4xl font-bold tracking-[.05em]">{{ $t('notice.title') }}</span>
-      <span class="text-[#9f99a7] text-[10px] pt-4">{{ $t('notice.intro') }}</span>
+    <div class="px-12">
+      <div class="text-[#AB60FF] text-3xl font-bold tracking-[.05em] english-title">{{
+        $t('notice.title') }}</div>
+      <div class="text-[#9f99a7] text-[10px] pt-4 english-title">{{ $t('notice.intro') }}</div>
     </div>
 
     <div class="w-full flex flex-col items-center pt-6 pb-20">

@@ -1,12 +1,14 @@
 <template>
   <div class="w-full pt-20 overflow-x-hidden">
     <div class="px-12">
-      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]">{{ $t('recommendBh.mode1Title') }}</div>
-      <div class="text-white text-3xl font-bold tracking-[0.05em] py-2">{{ $t('recommendBh.mode1Subtitle') }}</div>
+      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em] english-title">{{ $t('recommendBh.mode1Title') }}
+      </div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] py-2 english-title">{{ $t('recommendBh.mode1Subtitle')
+        }}</div>
     </div>
 
     <div class="w-full flex flex-col items-center mt-10">
-      <div class="flex flex-col rounded-3xl px-6 py-8 w-82 max-w-[82vw] text-[#d3ced9] text-xs glass relative">
+      <div class="flex flex-col rounded-3xl px-6 py-8 w-82 max-w-[82vw] text-[#d3ced9] text-xs glass relative pr-[14%]">
         <img src="./images/pvp-image.png" alt="" class="w-50 max-w-[50vw] h-auto absolute -top-5 -right-25">
         <span class="py-0.5 left-icon">{{ $t('recommendBh.mode1Condition') }}</span>
         <span class="py-0.5 left-icon">{{ $t('recommendBh.mode1Limit') }}</span>
@@ -14,18 +16,21 @@
         <span class="py-0.5 left-icon">{{ $t('recommendBh.mode1Purpose') }}</span>
 
         <span class="text-[#AB60FF] font-bold pb-0.5 pt-4">{{ $t('recommendBh.mode1RewardTitle') }}</span>
-        <span class="py-0.5">{{ $t('recommendBh.mode1Reward') }}</span>
+        <span class="py-0.5 pl-4">{{ $t('recommendBh.mode1Reward') }}</span>
       </div>
     </div>
 
     <div class="px-12 pt-16">
-      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]">{{ $t('recommendBh.mode2Title') }}</div>
-      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2">{{ $t('recommendBh.mode2Subtitle1') }}</div>
-      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2">{{ $t('recommendBh.mode2Subtitle2') }}</div>
+      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em] english-title">{{ $t('recommendBh.mode2Title') }}
+      </div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2 english-title">{{
+        $t('recommendBh.mode2Subtitle1') }}</div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2 english-title">{{
+        $t('recommendBh.mode2Subtitle2') }}</div>
     </div>
 
     <div class="w-full flex flex-col items-center mt-10">
-      <div class="flex flex-col rounded-3xl px-6 py-8 w-82 max-w-[82vw] text-[#d3ced9] text-xs glass relative">
+      <div class="flex flex-col rounded-3xl px-6 py-8 w-82 max-w-[82vw] text-[#d3ced9] text-xs glass relative pr-[14%]">
         <img src="./images/topspeed-image.png" alt="" class="w-45 max-w-[45vw] h-auto absolute -top-10 -right-25">
         <span class="py-0.5 left-icon">{{ $t('recommendBh.mode2Condition') }}</span>
         <span class="py-0.5 left-icon">{{ $t('recommendBh.mode2Limit') }}</span>
@@ -40,19 +45,22 @@
     </div>
 
     <div class="px-12 pt-16">
-      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]">{{ $t('recommendBh.mode3Title') }}</div>
-      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2">{{ $t('recommendBh.mode3Subtitle') }}</div>
-      <div class="text-[#d3ced9] text-3xl font-bold tracking-[0.05em] pt-2">{{ $t('recommendBh.mode3Coming') }}</div>
+      <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em] english-title">{{ $t('recommendBh.mode3Title') }}
+      </div>
+      <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2 english-title">{{ $t('recommendBh.mode3Subtitle')
+        }}</div>
+      <div class="text-[#d3ced9] text-3xl font-bold tracking-[0.05em] pt-2 english-title">{{
+        $t('recommendBh.mode3Coming') }}</div>
     </div>
 
     <div class="w-full flex flex-col items-center mt-10 mb-20">
-      <div class="flex flex-col rounded-3xl px-6 py-8 w-82 max-w-[82vw] text-[#d3ced9] text-xs glass relative">
-        <img src="./images/game3.png" alt="" class="w-45 max-w-[45vw] h-auto absolute -top-10 -right-20">
+      <div class="flex flex-col rounded-3xl px-6 py-8 w-82 max-w-[82vw] text-[#d3ced9] text-xs glass relative pr-[20%]">
+        <img src="./images/game3.png" alt="" class="w-45 max-w-[45vw] h-auto absolute -top-10 -right-22">
         <span class="py-0.5 left-icon">{{ $t('recommendBh.mode3Description') }}</span>
         <span class="py-0.5 left-icon">{{ $t('recommendBh.mode3Targets') }}</span>
-        <span class="py-0.5">{{ $t('recommendBh.mode3Target1') }}</span>
-        <span class="py-0.5">{{ $t('recommendBh.mode3Target2') }}</span>
-        <span class="py-0.5">{{ $t('recommendBh.mode3Target3') }}</span>
+        <span class="py-0.5 pl-6">{{ $t('recommendBh.mode3Target1') }}</span>
+        <span class="py-0.5 pl-6">{{ $t('recommendBh.mode3Target2') }}</span>
+        <span class="py-0.5 pl-6">{{ $t('recommendBh.mode3Target3') }}</span>
 
         <span class="text-[#AB60FF] font-bold pb-0.5 pt-4">{{ $t('recommendBh.mode3Features') }}</span>
         <span class="py-0.5 left-icon">{{ $t('recommendBh.mode3Feature1') }}</span>
@@ -124,4 +132,6 @@ const toHome = () => {
     transform: translateY(-50%);
   }
 }
+
+
 </style>

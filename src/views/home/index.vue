@@ -1,8 +1,9 @@
 <template>
-  <div class="bg-[#0e0024] overflow-auto overflow-x-hidden">
+  <div class="bg-[#0e0024] overflow-auto overflow-x-hidden overflow-y-auto">
     <div class="w-full">
-      <el-carousel arrow="always" :interval="3000" :height="carouselHeight">
-        <el-carousel-item v-for="(item, index) in carouselList" :key="index">
+      <el-carousel ref="carouselRef" arrow="always" :interval="3000" :height="carouselHeight || '200px'" trigger="click">
+        <el-carousel-item @touchstart="onTouchStart" @touchend="onTouchEnd" @touchmove="onTouchMove"
+          v-for="(item, index) in carouselList" :key="index">
           <img :ref="el => carouselImgs[index] = el" @load="onImgLoad(index)" :src="item" alt=""
             class="w-full h-auto block">
         </el-carousel-item>
@@ -14,8 +15,8 @@
 
 
       <div class="flex flex-col px-5 py-10">
-        <span class="text-[#AB60FF] text-4xl font-bold tracking-[.05em]">{{ $t('home.title') }}</span>
-        <span class="text-[#9f99a7] text-xs pt-4">{{ $t('home.intro') }}</span>
+        <span class="text-[#AB60FF] text-4xl font-bold tracking-[.05em] english-title">{{ $t('home.title') }}</span>
+        <span class="text-[#9f99a7] text-xs pt-4 english-title pr-25">{{ $t('home.intro') }}</span>
       </div>
 
       <div class="backdrop-filter px-4 text-xs w-full">
@@ -23,11 +24,10 @@
           <img src="./images/home-introduce.png" alt="" class="w-64 max-w-[78vw] h-auto mb-4">
           <div>{{ $t('home.introDoc1') }}</div>
           <div>{{ $t('home.introDoc2') }}</div>
-          <div>{{ $t('home.introDoc3') }}</div>
         </div>
         <div class="w-full pb-6 flex flex-col items-center">
-          <span class="xs-text left-dot">{{ $t('home.introDoc4') }}</span>
-          <span class="xs-text left-dot">{{ $t('home.introDoc5') }}</span>
+          <span class="xs-text">{{ $t('home.introDoc4') }}</span>
+          <span class="xs-text">{{ $t('home.introDoc5') }}</span>
         </div>
       </div>
     </div>
@@ -36,8 +36,9 @@
 
     <div class="w-full px-5 relative ">
       <div class="flex flex-col justify-center px-6 py-12 text-center">
-        <span class=" text-5xl font-bold tracking-[.05em] text-[#AB60FF]">{{ $t('home.HunterTitle') }}</span>
-        <div class="text-white text-xs pt-3">{{ $t('home.HunterDoc') }}</div>
+        <span class=" text-5xl font-bold tracking-[.05em] text-[#AB60FF] english-title">{{ $t('home.HunterTitle')
+          }}</span>
+        <div class="text-white text-xs pt-3 english-title">{{ $t('home.HunterDoc') }}</div>
       </div>
 
       <img src="./images/home-bg-1.png" alt="" class="absolute left-3 top-20 w-100 max-w-[100vw] h-auto z-[1]">
@@ -89,11 +90,12 @@
 
     <div class="w-full px-5 pt-10">
       <div class="backdrop-filter px-4 text-xs w-full">
-        <p class="py-4 text-sm text-white font-bold flex justify-center">{{ $t('home.HunterText1') }}</p>
-        <div class="w-full pb-6 flex flex-col items-center">
-          <span class="xs-text left-dot pb-2">{{ $t('home.HunterText2') }}</span>
-          <span class="xs-text left-dot pb-2">{{ $t('home.HunterText3') }}</span>
-          <span class="xs-text left-dot">{{ $t('home.HunterText4') }}</span>
+        <p class="py-4 text-sm text-white font-bold flex justify-center text-center english-title">{{
+          $t('home.HunterText1') }}</p>
+        <div class="w-full pb-6 flex flex-col pl-[26%]">
+          <span class="xs-text pb-2">{{ $t('home.HunterText2') }}</span>
+          <span class="xs-text pb-2">{{ $t('home.HunterText3') }}</span>
+          <span class="xs-text ">{{ $t('home.HunterText4') }}</span>
         </div>
       </div>
     </div>
@@ -118,7 +120,8 @@
       </div>
 
       <div class="flex flex-col px-6">
-        <span class="text-[#AB60FF] pb-4 text-5xl font-bold text-center tracking-[0.1em]">{{ $t('home.gameModel')
+        <span class="text-[#AB60FF] pb-4 text-5xl font-bold text-center tracking-[0.1em] english-title">{{
+          $t('home.gameModel')
           }}</span>
       </div>
 
@@ -132,11 +135,11 @@
       </div>
 
       <div class="flex flex-col gap-3 text-[#9f99a7] text-xs py-8 px-8">
-        <div class="flex flex-col" v-if="showModeData.mode !== 3" v-for="(item, index) in showModeData.textList"
-          :key="index">
+        <div class="flex flex-col items-center" v-if="showModeData.mode !== 3"
+          v-for="(item, index) in showModeData.textList" :key="index">
           <span class="py-0.5" v-for="textItem in item" :key="textItem">{{ $t(textItem) }}</span>
         </div>
-        <div class="flex flex-col" v-else v-for="(item) in showModeData.textList">
+        <div class="flex flex-col items-center" v-else v-for="(item) in showModeData.textList">
           <template v-for="textItem in item">
             <span class="px-2 py-0.5" v-if="!textItem.isTitle" :class="[textItem.leftIcon ? 'left-icon' : '']">
               {{ $t(textItem.text) }}
@@ -151,7 +154,8 @@
     <!-- 积分系统 -->
     <div class="w-full px-5">
       <div class="flex justify-center px-6 py-12 pb-12">
-        <span class="text-[#AB60FF] text-4xl font-bold tracking-[.05em]">{{ $t('home.PointsTitle') }}</span>
+        <span class="text-[#AB60FF] text-4xl font-bold tracking-[.05em] english-title">{{ $t('home.PointsTitle')
+          }}</span>
       </div>
 
       <div class="flex justify-center w-full -mt-6">
@@ -159,7 +163,7 @@
       </div>
 
       <div class="flex flex-col font-thin pt-10 px-12  text-[#9f99a7] text-xs">
-        <span class="text-white font-bold pb-2">{{ $t('home.PointsDoc1') }}</span>
+        <span class="text-white font-bold pb-2 english-title">{{ $t('home.PointsDoc1') }}</span>
 
         <span class="py-0.5">{{ $t('home.PointsDoc2') }}</span>
         <span class="py-0.5">{{ $t('home.PointsDoc3') }}</span>
@@ -171,13 +175,14 @@
     <!-- 联盟生态 -->
     <div class="w-full px-5 pt-24">
       <div class="flex justify-center px-6">
-        <span class="text-[#AB60FF] text-5xl font-bold tracking-[.05em]">{{ $t('home.allianceTitle') }}</span>
+        <span class="text-[#AB60FF] text-5xl font-bold tracking-[.05em] english-title">{{ $t('home.allianceTitle')
+          }}</span>
       </div>
 
       <div class="w-full flex justify-center">
         <!-- <img src="./images/league-bg.png" alt="" class="w-[140vw] max-w-none h-auto" style="min-width:600px;" /> -->
         <div class="text-[#9f99a7] flex flex-col item-center justify-center  text-xs z-10 pt-8 text-center">
-          <div class="py-3 font-bold text-white">{{ $t('home.allianceDoc1') }}</div>
+          <div class="py-3 font-bold text-white english-title">{{ $t('home.allianceDoc1') }}</div>
           <span class="py-0.5">{{ $t('home.allianceDoc2') }}</span>
           <span class="py-0.5">{{ $t('home.allianceDoc3') }}</span>
           <span class="py-0.5">{{ $t('home.allianceDoc4') }}</span>
@@ -186,8 +191,9 @@
       </div>
 
       <div class="w-full px-5 pt-20">
-        <div class="backdrop-filter py-4 px-4 text-xs w-full flex flex-col items-center">
-          <img src="./images/ecology-bg.png" alt="" class="w-60 max-w-[60vw] h-auto -mt-20 mb-6">
+        <div class="backdrop-filter py-4 px-4 text-xs w-full flex flex-col relative pt-[160px]">
+          <img src="./images/ecology-bg.png" alt=""
+            class="w-60 max-w-[60vw]  h-auto absolute -top-15 left-[50%] translate-x-[-50%]">
           <span class="py-0.5">{{ $t('home.allianceDoc6') }}</span>
           <span class="py-0.5">{{ $t('home.allianceDoc7') }}</span>
           <span class="py-0.5">{{ $t('home.allianceDoc8') }}</span>
@@ -210,8 +216,9 @@
     <!-- 未来蓝图 -->
     <div class="w-full">
       <div class="flex flex-col justify-center px-6 py-12 text-center">
-        <span class="text-[#AB60FF] text-5xl font-bold tracking-[.05em]">{{ $t('home.RoadmapTitle') }}</span>
-        <div class="text-white text-xs pt-4">{{ $t('home.RoadmapDoc') }}</div>
+        <span class="text-[#AB60FF] text-5xl font-bold tracking-[.05em] english-title">{{ $t('home.RoadmapTitle')
+          }}</span>
+        <div class="text-white text-xs pt-4 english-title">{{ $t('home.RoadmapDoc') }}</div>
       </div>
 
       <div class="flex justify-between px-4">
@@ -226,7 +233,8 @@
             </div>
           </div>
           <div class="flex flex-col pt-1">
-            <span v-for="text in item.textList" :key="text" class="text-[#9f99a7] text-[8px] py0.5">{{ $t(text) }}</span>
+            <span v-for="text in item.textList" :key="text" class="text-[#9f99a7] text-[8px] py0.5">{{ $t(text)
+              }}</span>
           </div>
         </div>
       </div>
@@ -260,8 +268,8 @@
     </div>
 
     <div class="w-full flex flex-col text-center items-center justify-center py-10 text-[#9f99a7]">
-      <span class="text-3xl font-bold">{{ $t('home.bottomTitle1') }}</span>
-      <span class="text-3xl font-bold pt-2">{{ $t('home.bottomTitle2') }}</span>
+      <span class="text-3xl font-bold english-title">{{ $t('home.bottomTitle1') }}</span>
+      <span class="text-3xl font-bold pt-2 english-title">{{ $t('home.bottomTitle2') }}</span>
     </div>
 
 
@@ -445,6 +453,27 @@ const nextBottomData = [
     textList: ['home.nextData6Text1']
   }
 ]
+
+const carouselRef = ref(null)
+const touStart = ref(false)
+const touStartX = ref(0)
+const touchX = ref('left')
+const onTouchStart = (e) => {
+  touStart.value = true
+  touStartX.value = e.changedTouches[0].clientX
+}
+const onTouchEnd = (e) => {
+  touStart.value = false
+  if(e.changedTouches[0].clientX - touStartX.value > 0) {
+    touchX.value = 'right'
+    carouselRef.value.prev()
+  }else{
+    touchX.value = 'left'
+    carouselRef.value.next()
+  }
+  
+  console.log(touchX.value)
+}
 </script>
 
 <style scoped lang="scss">
@@ -457,9 +486,13 @@ const nextBottomData = [
   top: 65% !important;
 
   i svg {
+    font-size: 64px;
     color: #b15cff;
     filter:
       drop-shadow(0 0 4px #ffffff) drop-shadow(0 0 20px #b15cff) drop-shadow(0 0 40px #b15cff) drop-shadow(0 0 60px #b15cff);
+  }
+  i{
+    font-size: 24px;
   }
 }
 
@@ -655,4 +688,6 @@ const nextBottomData = [
     transform: translateY(-50%);
   }
 }
+
+
 </style>

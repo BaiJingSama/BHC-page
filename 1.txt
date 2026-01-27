@@ -1,0 +1,361 @@
+官网中英
+首頁
+
+Project Overview
+Bounty Hunter
+
+遊戲化預測 × DAO 治理 × 價值承接系統
+Game-based Prediction × DAO Governance × Value Settlement
+
+
+基於 MOVA 生態的首個遊戲化DAO預測平台
+The first Gamified DAO Prediction Platform built on the MOVA ecosystem.
+同時為 MOVA × USD1Swap 黑客松生態孵化項目
+An incubated project of the MOVA × USD1Swap Hackathon
+並已獲得 100 萬 USD1 投資支持
+Backed by USD 1,000,000 in USD1 strategic funding
+將預測行為、決策過程、資金流向壓縮進統一的遊戲化場景中
+We compress prediction, decision-making, and capital flow
+Into a single, unified game environment.
+不論輸贏，所有參與行為的價值不被淘汰，只被重新分配
+No matter the outcome,
+Value is never eliminated. It is only redistributed.
+
+獵人 NFT 盲盒
+進入遊戲對戰、預測與價值分配系統的唯一入口
+Hunter NFT Blind Boxes
+Your gateway into battles, predictions, and system-level value flows
+
+白銀盲盒
+Silver Box
+
+黃金盲盒
+Gold Box
+ 
+史詩盲盒
+Epic Box
+
+NFT 是長期參與平台行為與價值分配的權益憑證
+NFTs are long-term participation and revenue-capture credentials.
+每一個獵人角色，都是你的遊戲資產
+Every Hunter is a system asset.
+每一次對戰，都為你累積可結算價值
+Every battle generates settleable value.
+每一次系統分配，都與你直接相關
+Every distribution flows directly to you.
+
+立即申購
+Mint Now
+
+遊戲模式
+Game Modes
+
+
+零成本體驗場
+Free Arena
+低門檻進場，以最小成本進入對戰與價值系統。
+A low-barrier entry point into battles and value flows.
+持有任意 NFT 即可參與。
+Anyone holding any NFT can participate.
+用於培養玩家的 DAO 判斷能力 與 長期參與習慣，
+Designed to train DAO decision skills
+讓每一次行為都成為經驗與價值的累積。
+And build long-term engagement habits.
+這不是短期博弈，
+This is not short-term speculation.
+而是一條可持續參與、可逐步升級的成長路徑。
+It is a progressive participation path where every action compounds into experience and value.
+
+ PVP 模式
+PVP Arena
+PVP 模式是核心對戰場景，
+The core competitive battlefield.
+玩家即時匹配，鏈上結算，
+Players are matched in real time. Results are settled on-chain.
+每一次對戰，都是一次判斷與策略的正面交鋒。
+Every match is a direct test of judgment and strategy.
+實際上，這是一個充滿不確定性的戰場。
+This is a probabilistic battlefield.
+結果並非單一因素決定，是實力×運氣的共同作用。
+Outcomes are driven by skill × randomness.
+勝負不再是唯一價值來源，
+Winning is not the only value.
+每一次參與，都留下可結算、可累積的價值。
+Every action leaves behind accumulatable, claimable system value.
+
+
+遊戲化預測市場（未來開放）
+Gamified Prediction Market (Coming Soon)
+圍繞可驗證事件與數據結果
+Built around verifiable events and data.
+預測標的可來自：
+Prediction targets may include:
+遊戲內事件 
+In-game events
+DAO 提案結果
+DAO proposal outcomes
+鏈上或現實世界可驗證數據
+On-chain and real-world verifiable data
+特點：
+Key Features:
+•預測本身即是一種 DAO 治理行為
+•Predictions are governance actions
+•結果將直接影響DAO 資源分配方向
+•Results directly shape DAO resource allocation
+
+Boost 積分系統
+Boost Points System
+不是獎勵，而是每日都在累積的「挖礦權重」。
+Boost is not a reward. It is your mining weight.
+Boost 積分是 Bounty Hunter 生態中的核心行為積分
+Boost Points are the core behavioral metric in Bounty Hunter.
+不直接兌換價值，是每日挖礦分配的唯一計算依據
+They do not directly represent value. They determine how much value you receive every day.
+这是一個只獎勵「行為」與「時間」的系統
+This system rewards time + behavior, not referrals or hype.
+每一次行為，都會增加你的 Boost積分
+Every action increases your Boost weight.
+
+聯盟生態
+Alliance Network
+聯盟生態，是 Bounty Hunter 生態中的「行為聚合 × 價值分配單元」。
+The Alliance Layer is the behavior aggregation and value-distribution engine of Bounty Hunter.
+它不是單純的合作名單，而是一個 可被接入、可被計算、可被分潤的生態層。
+This is not a partnership list.It is a computable, on-chain revenue-sharing layer.
+每一個聯盟，皆可在 Bounty Hunter 內建立參與專區
+聯盟不是被動導流，而是擁有「自己的戰場」。
+Each Alliance can operate its own battle zone inside Bounty Hunter.
+在這裡，其他生態、社群、項目方不只是「曝光合作」，
+External communities and projects do not just get exposure.
+而是以行為與真實流水，參與整個系統的價值循環。
+They bring real users, real volume, and real behavior into the system
+And earn directly from the value they generate.
+【立即申請聯盟合作】
+Apply Now
+未来蓝图
+Roadmap
+階段一（2026 Q1）
+•MOVA 首發上線
+•獵人盲盒 DApp上線
+•開放獵人NFT發售，$BHC 發佈
+•積分代幣挖礦，遊戲正式上線
+•開放零門檻與PVP模式
+•動態獎金池正式啟動
+Phase 1 – Q1 2026
+• MOVA mainnet launch;
+ • Hunter Blind Box DApp goes live;
+ • Hunter NFTs + $BHC released;
+ • Mining & gameplay activated;
+ • Free Arena + PVP enabled;
+ • Dynamic reward pool starts;
+階段二（2026 Q2）
+•開啟DAO 治理;
+•$BHC成為跨鏈鏈遊生態治理核心代幣;
+•推出多人戰場與大型公會戰（4人/8人團隊戰、聯盟對戰）;
+•史詩盲盒正式開售;
+Phase 2 – Q2 2026
+• DAO governance activated;
+ • $BHC becomes cross-chain GameFi governance token;
+ • Team battles and guild wars (4v4, 8v8, Alliance Wars);
+ • Epic Boxes released;
+階段三（2026 Q3）
+•開放預測等更多進階遊戲模式，完成生態閉環;
+•$BHC價值全面提升;
+Phase 3 – Q3 2026
+• Prediction markets and advanced modes go live;
+ • Full economic loop completed;
+階段四（2026 Q4）
+•成立 Bounty Hunter Labs;
+•投資並孵化鏈遊或基礎設施應用專案;
+•積分商城開放;
+•支持實體兌換與 NFT 聯動消費;
+Phase 4 – Q4 2026
+• Bounty Hunter Labs launched;
+ • Investments and incubation of GameFi + infra projects;
+ • Point shop opens;
+ • Physical redemptions and NFT commerce enabled;
+階段五（2027 Q1）
+•登陸Top10 主流平台;
+•完成 DEX × CEX生態互聯;
+•推出 Bounty Hunter U卡系統;
+•實現虛擬與現實世界的消费对接;
+Phase 5 – Q1 2027
+• Listed on top 10 major platforms;
+ • DEX × CEX ecosystem integration;
+ • Bounty Hunter U-Card released;
+ • On-chain to real-world spending enabled;
+階段六（2027+）
+•打造涵蓋遊戲、娛樂、商城等場景的全球化結算體系;
+Phase 6 – 2027+
+• Global settlement network across games, commerce, and entertainment
+
+我們不追隨趨勢
+我們創造賽道
+
+We don’t follow trends.
+We create categories.
+
+
+
+
+公告
+Announcement
+基於 MOVA 生態的首個 遊戲化 DAO 預測平台
+The first Gamified DAO Prediction Platform built on the MOVA ecosystem.
+
+遊戲下載
+Download
+這不是一個單純的遊戲，
+This is not just a game.
+也不是傳統預測市場。
+This is not a traditional prediction market.
+而是一套「遊戲化的 DAO 決策與價值分配系統」
+It is a gamified DAO decision and value-distribution system.
+不論輸贏，所有參與行為的價值不被淘汰，只被重新分配
+No matter who wins or loses,all participation value is preserved and redistributed.
+
+iOS 下載（即將開放）
+安卓下載（即將開放）
+Download for iOS（Coming Soon）
+Download for Android（Coming Soon）
+
+
+遊戲模式
+Game Modes
+玩法一｜零成本體驗場
+Mode 1 — Zero-Cost Trial
+參與條件：獵人通行證
+Entry: Hunter Pass (PASS NFT)
+每日上限：每张通行证最多 3 場/日
+Limit: up to 3 rounds/day per pass
+不需投入資金
+No capital required
+用於培養 DAO 判斷與參與習慣
+Designed to onboard and train DAO decision behavior
+BOOST 積分獎勵，以積分算力挖礦方式產出$BHC
+Earn BOOST points:
+BOOST converts into $BHC issuance over time
+玩法二：PVP模式：雙獵之戰 
+Mode 2 — PVP: Dual Hunt
+參與條件：持有獵人角色 NFT
+Entry: Hunter character NFT
+每日上限：無限制
+Unlimited rounds/day
+資金門檻：10-500 $MOVA
+Take range: 10–500 $MOVA per match
+遊戲競技獎勵（每局）
+Per-Match Payout
+勝出者 → 80%獎池 + BOOST積分
+Winner → 80% of the pot + BOOST points
+未勝出者 → BOOST 積分
+Non-winner → BOOST points
+國庫 → 20% 獎池
+￮15% 每日持續匯入LP
+￮5% 注入動態獎池
+•Treasury → 20% of the pot
+￮15% continuously routed to LPs
+￮5% into the dynamic reward pool
+玩法三：遊戲化預測市場（未來開放）
+Mode 3 — Gamified Prediction Market (coming)
+圍繞可驗證事件與數據結果
+Built around verifiable events and data.
+預測標的可來自：
+Prediction targets may include:
+遊戲內事件 
+In-game events
+DAO 提案結果
+DAO proposal outcomes
+鏈上或現實世界可驗證數據
+On-chain and real-world verifiable data
+特點：
+Key features:
+•預測本身即是一種 DAO 治理行為
+•Predictions are governance actions
+•結果將直接影響DAO 資源分配方向
+•Results directly shape DAO resource allocation
+
+
+
+底圖這句話也要隨語言切換。現在是固定的中文圖，没有译文，切语言没变化
+
+译文为：The GameFi Revolution Starts Here
+
+
+官网菜单栏：
+Navigation
+首頁
+Home
+獵人NFT
+ Hunter NFTs
+公告
+Announcements
+下載遊戲
+ Download
+遊戲玩法
+ Gameplay
+白皮書
+ Whitepaper
+加入BountyHunter
+ Join Bounty Hunter
+
+
+官网语言选择：
+
+
+Click the image to view the sheet.
+
+Click the image to view the sheet.
+
+Click the image to view the sheet.
+
+Click the image to view the sheet.
+
+Click the image to view the sheet.
+
+
+Click the image to view the sheet.
+
+
+加入BH表单问题：
+
+1️⃣ 姓名 / 昵称
+中文：
+你的常用昵称
+English:
+Your Preferred Nickname
+
+2️⃣ 联系方式
+中文：
+联系方式（Telegram / X / Email）
+English:
+Contact Information (Telegram / X / Email)
+
+3️⃣ 项目信息
+中文：
+项目名称
+English:
+Project Name
+
+4️⃣ 项目介绍
+中文：
+项目简介（请简要介绍项目定位、核心产品及当前阶段）
+English:
+Project Description (Briefly introduce your project’s positioning, core product, and current stage)
+
+5️⃣ 项目 X（Twitter）
+中文：
+项目 X（Twitter）账号链接
+English:
+Project X (Twitter) Account Link
+
+6️⃣ 项目社区
+中文：
+项目社区链接（Telegram / Discord / Website）
+English:
+Project Community Links (Telegram / Discord / Website)
+
+7️⃣ 合作需求说明
+中文：
+合作需求描述（请说明希望与 Bounty Hunter 展开的合作方式或目标）
+English:
+Cooperation Requirements (Please describe how you would like to collaborate with Bounty Hunter or your expected objectives)

@@ -1,13 +1,14 @@
 <template>
   <div class="w-full pt-20">
-    <div class="px-12">
-      <div class="text-[#AB60FF] text-3xl font-bold tracking-[.05em] english-title">{{
+    <div class="px-8">
+      <div class="text-[#AB60FF]  font-bold tracking-[.05em] english-title"
+        :class="[lang === 'en' ? 'text-2xl' : 'text-3xl']">{{
         $t('notice.title') }}</div>
       <div class="text-[#9f99a7] text-[10px] pt-4 english-title">{{ $t('notice.intro') }}</div>
     </div>
 
     <div class="w-full flex flex-col items-center pt-6 pb-20">
-      <div v-for="(item, index) in noticeList" :key="index" @click="item.isActive = !item.isActive"
+      <div v-for="(item, index) in noticeList" :key="index" @click=""
         class="w-85 max-w-[85vw] border border-[#9f99a7] rounded-xl py-4 px-8 bg-[#271a3a] text-white text-xs  mt-8">
         <div class="w-full flex items-center relative">
           <div class="w-4 h-4 rounded-md bg-[#ab60ff] absolute -left-6 top-[50%] -translate-y-1/2"></div>
@@ -30,12 +31,14 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import i18n from '../../plugins/i18n'
 
+const lang = computed(() => i18n.global.locale.value)
 const noticeList = ref([
   {
     title: 'Bounty Hunter 正式上线公告',
-    isActive: true,
+    isActive: false,
     textList: [
       { text: '尊敬的用户与合作伙伴：' },
       { text: '我们非常荣幸地宣布，Bounty Hunter —— 全球首个全链互通的 PVP GameFi 竞技平台，现已正式上线。' },

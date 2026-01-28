@@ -21,11 +21,11 @@
   "mode2Winner": "Winner: 80% of prize pool + BOOST points",
   "mode2Loser": "Loser: Only BOOST points",
   "mode2Treasury": "Treasury → 20% of prize pool",
-  "mode2TreasuryDetail": "(15% continuously added to LP | 5% injected into dynamic prize pool)",
+  "mode2TreasuryDetail": "(15% continuously added to LP & 5% injected into dynamic prize pool)",
   
   "mode3Title": "Mode 3:",
   "mode3Subtitle": "Gamified Prediction Market",
-  "mode3Coming": "(Coming Soon)",
+  "mode3Coming": "Coming Soon",
   "mode3Description": "Focus on verifiable events and data results",
   "mode3Targets": "Prediction targets can come from:",
   "mode3Target1": "In-game events",

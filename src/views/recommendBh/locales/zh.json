@@ -21,11 +21,11 @@
   "mode2Winner": "勝出者：80% 獎池 + BOOST 積分",
   "mode2Loser": "未勝出者：BOOST 積分",
   "mode2Treasury": "國庫 → 20% 獎池",
-  "mode2TreasuryDetail": "(15% 每日持續匯入LP | 5% 注入動態獎池)",
+  "mode2TreasuryDetail": "(15% 每日持續匯入LP & 5% 注入動態獎池)",
   
   "mode3Title": "玩法三：",
   "mode3Subtitle": "遊戲化預測市場",
-  "mode3Coming": "(未來開放)",
+  "mode3Coming": "未來開放",
   "mode3Description": "圍繞可驗證事件與數據結果",
   "mode3Targets": "預測標的可來自：",
   "mode3Target1": "遊戲內事件",

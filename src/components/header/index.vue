@@ -32,18 +32,19 @@
   <el-dialog custom-class="more-dialog" :append-to-body="false" v-model="dialogVisible" fullscreen>
     <div class="w-full pt-10">
       <div @click="goPath(item.path)" v-for="(item, index) in menuList" :key="item.name"
-        class="w-full text-white text-2xl font-bold px-6 py-4 english-title border-[#322645] border-t-1"
-        :class="[index === menuList.length - 1 ? 'border-b-1' : '']">{{ $t(item.name) }}</div>
+        class="w-full text-white text-2xl font-bold px-6 py-4 border-[#322645] border-t-1"
+        :class="[index === menuList.length - 1 ? 'border-b-1' : '', language === 'en' ? 'english-title' : '']">{{ $t(item.name) }}</div>
     </div>
   </el-dialog>
 </template>
 
 <script lang="ts" setup>
 
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 // 导入 i18n 实例以切换全局语言
 import i18n from '../../plugins/i18n'
+
 
 const router = useRouter()
 const language = ref('en')
@@ -74,7 +75,8 @@ const menuList = [
   },
   {
     name: 'header.hunterNFT',
-    path: '',
+    path: 'https://dapp.bountyhunter.one/',
+    // 跳转
   },
   {
     name: 'header.announcements',
@@ -111,24 +113,30 @@ const goPath = async (path: string) => {
   // 确定本地路由表中有path
   const routes = router.getRoutes()
   
-  // console.log(routes)
-  if (!routes.find((route) => route.path === path)) {
-    return
+  if (routes.find((route) => route.path === path)){
+
+    const target = path && path.trim() ? path : '/'
+
+    try {
+      await router.push(target)
+    } catch (e) {
+      // 忽略重复导航等异常
+      // console.warn('导航失败', e)
+    }
+  }else{
+    window.open(path)
   }
 
   // 关闭对话框
   dialogVisible.value = false
 
   // 处理空路径，默认跳到首页
-  const target = path && path.trim() ? path : '/'
-
-  try {
-    await router.push(target)
-  } catch (e) {
-    // 忽略重复导航等异常
-    // console.warn('导航失败', e)
-  }
+  
 }
+
+onMounted(() => {
+  switchLang('en', 'English')
+})
 </script>
 
 <style lang="scss" scoped>

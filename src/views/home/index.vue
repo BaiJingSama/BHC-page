@@ -24,14 +24,15 @@
       </div>
 
       <div class="backdrop-filter px-4 text-xs w-full">
-        <div class="w-full py-6 pt-8 flex flex-col items-center px-8">
+        <div class="w-full py-6 pt-8 flex flex-col items-center text-center">
           <img src="./images/home-introduce.png" alt="" class="w-64 max-w-[78vw] h-auto mb-4">
           <div>{{ $t('home.introDoc1') }}</div>
           <div>{{ $t('home.introDoc2') }}</div>
+          <div>{{ $t('home.introDoc3') }}</div>
         </div>
         <div class="w-full pb-6 flex flex-col items-center text-center">
-          <span class="xs-text">{{ $t('home.introDoc4') }}</span>
-          <span class="xs-text">{{ $t('home.introDoc5') }}</span>
+          <span>{{ $t('home.introDoc4') }}</span>
+          <span>{{ $t('home.introDoc5') }}</span>
         </div>
       </div>
     </div>
@@ -169,7 +170,7 @@
         <img src="./images/integrating-image.png" alt="" class="w-90 max-w-[90vw] h-auto">
       </div>
 
-      <div class="flex flex-col items-center text-center font-thin pt-10 px-12  text-[#9f99a7] text-xs">
+      <div class="flex flex-col items-center text-center pt-10 px-12  text-[#9f99a7] text-xs">
         <span class="text-white font-bold pb-2">{{ $t('home.PointsDoc1') }}</span>
         <span class="py-0.5">{{ $t('home.PointsDoc2') }}</span>
         <span class="py-0.5">{{ $t('home.PointsDoc3') }}</span>

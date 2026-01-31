@@ -5,7 +5,7 @@
     </div>
 
     <div class="w-full flex justify-center items-center">
-      <img :src="item.image" alt="" v-for="item in iconList" :key="item.image" :class="item.class">
+      <img :src="item.image" alt="" v-for="item in iconList" :key="item.image" :class="item.class" @click="openUrl(item.url)">
     </div>
 
     <div class="w-full flex justify-center items-center py-5">
@@ -27,11 +27,13 @@ import emailIcon from './images/email-icon.png'
 const iconList = [
   {
     image: xIcon,
-    class: ['w-8', 'max-w-[8vw]', ' h-auto', 'mr-3']
+    class: ['w-8', 'max-w-[8vw]', ' h-auto', 'mr-3'],
+    url: 'https://x.com/BHC_GameFi'
   },
   {
     image: tgIcon,
-    class: ['w-8', 'max-w-[8vw]', ' h-auto, mr-3']
+    class: ['w-8', 'max-w-[8vw]', ' h-auto, mr-3'],
+    url: 'https://t.me/BHC_Gamefi/'
   },
   // {
   //   image: dcIcon,
@@ -39,9 +41,14 @@ const iconList = [
   // },
   {
     image: emailIcon,
-    class: ['w-8', 'max-w-[8vw]', ' h-auto']
+    class: ['w-8', 'max-w-[8vw]', ' h-auto'],
+    url: 'https://wsglmbwam8vt.sg.larksuite.com/share/base/form/shrlgsnRLaS051HJnN47D6fiECh'
   }
 ]
+
+const openUrl = (url: string) =>{
+  window.open(url)
+}
 </script>
 
 <style lang="scss" scoped></style>

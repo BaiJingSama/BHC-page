@@ -111,8 +111,8 @@
       <!-- 左箭头：向右呼吸 -->
       <img src="./images/right-arrow.png" alt="" class="w-10 max-w-[10vw] h-auto arrow-breathe arrow-left" />
 
-      <div class="w-35 py-3 text-center text-white text-sm font-bold bg">
-        {{ $t('home.button1') }}
+      <div class="w-35 py-3 text-center text-white text-sm font-bold bg" @click="clickButton(1)">
+        {{ $t('home.button1') }} 
       </div>
 
       <!-- 右箭头：向左呼吸 -->
@@ -485,6 +485,11 @@ const onTouchEnd = (e) => {
   }
   
   console.log(touchX.value)
+}
+
+const clickButton = (type:number) => {
+  const url = type === 1 ? 'https://dapp.bountyhunter.one/' : '/'
+  window.open(url)
 }
 </script>
 

@@ -104,7 +104,7 @@ const menuList = [
   },
   {
     name: 'header.join',
-    path: '',
+    path: 'https://wsglmbwam8vt.sg.larksuite.com/share/base/form/shrlgsnRLaS051HJnN47D6fiECh',
   },
 ]
 

@@ -112,7 +112,7 @@
       <img src="./images/right-arrow.png" alt="" class="w-10 max-w-[10vw] h-auto arrow-breathe arrow-left" />
 
       <div class="w-35 py-3 text-center text-white text-sm font-bold bg" @click="clickButton(1)">
-        {{ $t('home.button1') }} 
+        {{ $t('home.button1') }}
       </div>
 
       <!-- 右箭头：向左呼吸 -->
@@ -160,7 +160,7 @@
 
     <!-- 积分系统 -->
     <div class="w-full px-5">
-      <div class="flex justify-center px-6 py-12 pb-12">
+      <div class="flex justify-center text-center px-6 py-12 pb-12">
         <span class="text-[#AB60FF] flex items-center text-4xl font-bold tracking-[.05em]"
           :class="[lang === 'en' ? 'english-title' : '']">{{ $t('home.PointsTitle')
           }}</span>
@@ -181,7 +181,7 @@
 
     <!-- 联盟生态 -->
     <div class="w-full px-5 pt-24">
-      <div class="flex justify-center px-6">
+      <div class="flex justify-center text-center px-6">
         <span class="text-[#AB60FF] text-4xl font-bold tracking-[.05em]"
           :class="[lang === 'en' ? 'english-title' : '']">{{ $t('home.allianceTitle')
           }}</span>
@@ -214,7 +214,7 @@
         <!-- 左箭头：向右呼吸 -->
         <img src="./images/right-arrow.png" alt="" class="w-10 max-w-[10vw] h-auto arrow-breathe arrow-left" />
 
-        <div class="w-35 py-3 text-center text-white text-sm font-bold bg">
+        <div class="w-35 py-3 text-center text-white text-sm font-bold bg" @click="clickButton(2)">
           {{ $t('home.allianceButton') }}
         </div>
 
@@ -488,7 +488,7 @@ const onTouchEnd = (e) => {
 }
 
 const clickButton = (type:number) => {
-  const url = type === 1 ? 'https://dapp.bountyhunter.one/' : '/'
+  const url = type === 1 ? 'https://dapp.bountyhunter.one/' : 'https://wsglmbwam8vt.sg.larksuite.com/share/base/form/shrlgsnRLaS051HJnN47D6fiECh'
   window.open(url)
 }
 </script>

@@ -4,7 +4,7 @@
       <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]" :class="[lang === 'en' ? 'english-title' : '']">
         {{ $t('recommendBh.mode1Title') }}
       </div>
-      <div class="text-white text-2xl font-bold tracking-[0.05em] py-2" :class="[lang === 'en' ? 'english-title' : '']">
+      <div class="text-white text-1xl font-bold tracking-[0.05em] py-2" :class="[lang === 'en' ? 'english-title' : '']">
         {{ $t('recommendBh.mode1Subtitle')
         }}</div>
     </div>
@@ -26,7 +26,7 @@
       <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]" :class="[lang === 'en' ? 'english-title' : '']">
         {{ $t('recommendBh.mode2Title') }}
       </div>
-      <div class="text-white text-2xl font-bold tracking-[0.05em] pt-2" :class="[lang === 'en' ? 'english-title' : '']">
+      <div class="text-white text-1xl font-bold tracking-[0.05em] pt-2" :class="[lang === 'en' ? 'english-title' : '']">
         {{
         $t('recommendBh.mode2Subtitle1') }}{{ $t('recommendBh.mode2Subtitle2') }}</div>
       <!-- <div class="text-white text-3xl font-bold tracking-[0.05em] pt-2 english-title">{{
@@ -52,10 +52,10 @@
       <div class="text-[#AB60FF] text-3xl font-bold tracking-[0.05em]" :class="[lang === 'en' ? 'english-title' : '']">
         {{ $t('recommendBh.mode3Title') }}
       </div>
-      <div class="text-white text-2xl font-bold tracking-[0.05em] pt-2" :class="[lang === 'en' ? 'english-title' : '']">
+      <div class="text-white text-1xl font-bold tracking-[0.05em] pt-2" :class="[lang === 'en' ? 'english-title' : '']">
         {{ $t('recommendBh.mode3Subtitle')
         }}</div>
-      <div class="text-[#d3ced9] text-2xl font-bold tracking-[0.05em] pt-2">(<span
+      <div class="text-[#d3ced9] text-1xl font-bold tracking-[0.05em] pt-2">(<span
           :class="[lang === 'en' ? 'english-title' : '']">{{
           $t('recommendBh.mode3Coming') }}</span>)</div>
     </div>
